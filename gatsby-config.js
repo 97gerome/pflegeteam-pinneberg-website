@@ -6,5 +6,5 @@ module.exports = {
     title: `pflegeteam-pinneberg-website`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-svg`],
 }
