@@ -1,8 +1,13 @@
-@import "base/reset";
-@import "base/general";
-
-//Components
-@import "components/navbar";
-
 //Utils
 @import "utils/mixins";
+@import "utils/variables";
+
+//Base
+@import "base/reset";
+@import "base/general";
+@import "base/typography";
+
+
+//Components
+@import "components/header";
+@import "components/button";
