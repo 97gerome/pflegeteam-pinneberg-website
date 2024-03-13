@@ -1,0 +1,76 @@
+#footer {
+  background-color: $atlantis;
+  height: 400px;
+  width: 100%;
+
+  > .row {
+    @include max-width;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 100%;
+    color: white;
+    padding: 40px;
+
+    > .col {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      &-1 {
+        gap: 100px;
+        flex: 1.75;
+
+        > h3 {
+          color: $beru;
+        }
+
+        .services-wrapper {
+          position: relative;
+
+          > h5::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              width: 200px;
+              border: 2px solid $banana-biscuit;
+          }
+        }
+      }
+
+      &-2 {
+        gap: 20px;
+
+        > nav {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+
+      &-3 {
+        justify-content: space-between;
+
+        .contact-wrapper {
+          > h6 {
+            margin-bottom: 20px;
+          }
+
+          > p {
+            margin-bottom: 10px;
+          }
+        }
+
+      }
+
+      &-4 {
+        justify-content: end;
+
+        > .logo {
+          height: 50px;
+        }
+      }
+    }
+  }
+}

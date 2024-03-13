@@ -5,10 +5,10 @@
     &-1 {
       height: 40px;
       background-color: $nightshade;
+      color: white;
     
       a {
         font-size: 12px;
-        color: white;
       }
 
       > .col {
@@ -39,6 +39,7 @@
     &-2 {
       height: 100px;
       background-color: white;
+      color: $off-black;
       
       > .col {
         @include max-width;
