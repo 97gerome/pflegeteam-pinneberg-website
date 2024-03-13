@@ -2,16 +2,16 @@ import React from "react";
 import Layout from "../components/layout/layout";
 import Hero from "../components/hero";
 
-const IndexPage = () => {
+const Home = () => {
   return (
     <Layout>
-      <main>
+      <main id="home">
         <Hero />
       </main>
     </Layout>
   )
 };
 
-export default IndexPage;
+export default Home;
 
 export const Head = () => <title>Pflegeteam-Pinneberg GmbH</title>;
