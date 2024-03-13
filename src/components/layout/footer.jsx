@@ -1,7 +1,8 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import Logo from "../../images/pflegeteam-pinneberg-logo-white.svg";
-
+import FacebookLogo from "../../images/facebook-logo.svg";
+import InstagramLogo from "../../images/instagram-logo.svg";
 
 const Footer = () => {
   return (
@@ -50,12 +51,16 @@ const Footer = () => {
             </p>
           </div>
           <p className="address">
-            Dingstätte 1825421
+            Dingstätte 18
             <br />
-            Pinneberg
+            25421 Pinneberg
             <br />
             Deutschland
           </p>
+          <div className="social-media-wrapper">
+            <FacebookLogo />
+            <InstagramLogo />
+          </div>
         </div>
         <div className="col col-4">
           <Logo className="logo"/>

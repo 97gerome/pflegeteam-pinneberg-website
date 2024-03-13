@@ -1,6 +1,6 @@
 #footer {
   background-color: $atlantis;
-  height: 400px;
+  height: 450px;
   width: 100%;
 
   > .row {
@@ -18,8 +18,8 @@
       flex: 1;
 
       &-1 {
-        gap: 100px;
-        flex: 1.75;
+        justify-content: space-between;
+        flex: 2;
 
         > h3 {
           color: $beru;
@@ -27,6 +27,7 @@
 
         .services-wrapper {
           position: relative;
+          margin-bottom: 50px;
 
           > h5::after {
               content: "";
@@ -51,6 +52,7 @@
 
       &-3 {
         justify-content: space-between;
+        flex: 1.5;
 
         .contact-wrapper {
           > h6 {
@@ -62,6 +64,16 @@
           }
         }
 
+        .social-media-wrapper {
+          display: flex;
+          gap: 10px;
+
+          > svg {
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+          }
+        }
       }
 
       &-4 {
