@@ -1,0 +1,47 @@
+#hero {
+  position: relative;
+  height: 600px;
+
+  > .gatsby-image-wrapper {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  > .row {
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: white;
+
+    > .col {
+      @include max-width;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+  
+      > h1 {
+        margin-bottom: 20px;
+  
+        > span {
+          color: $beru;
+        }
+      }
+  
+      > p {
+        max-width: 50%;
+        margin-bottom: 40px;
+      }
+  
+      .buttons-wrapper {
+        > a {
+          margin: 0px 30px;
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+}
