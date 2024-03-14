@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
           <div className="buttons-wrapper">
             <Button label="Jetzt Bewerben" />
-            <Link to="">Unser Leistungskatalog</Link>
+            <Link className="underlined" to="">Unser Leistungskatalog</Link>
           </div>
         </div>
       </div>

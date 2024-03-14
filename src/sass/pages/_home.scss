@@ -181,4 +181,42 @@
       }
     }
   }
+
+  > #mit_pflegeteam_pinneberg {
+    background-color: white;
+
+    > .row {
+      > .col {
+        @include max-width;
+        padding: 50px 20px;
+        text-align: center;
+
+        > h4 {
+          color: $fresh-salmon;
+          margin-bottom: 50px;
+        }
+
+        > div {
+          display: flex;
+          justify-content: center;
+        }
+        
+        > .items-wrapper {
+          gap: 50px;
+          margin: 10px 0px 50px 0px;
+
+          > .item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+
+        > .buttons-wrapper {
+          align-items: center;
+          gap: 50px;
+        }
+      }
+    }
+  }
 }

@@ -1,8 +1,10 @@
 import React from "react";
 import Layout from "../components/layout/layout";
 import Hero from "../components/hero";
+import Ueberpruft from "../images/ueberpruft.svg";
 import { StaticImage } from "gatsby-plugin-image";
 import Button from "../components/button";
+import { Link } from "gatsby";
 
 const Home = () => {
   return (
@@ -109,6 +111,42 @@ const Home = () => {
                     <Button label="Mehr info" />
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="mit_pflegeteam_pinneberg">
+          <div className="row">
+            <div className="col">
+              <h4>Mit Pflegeteam-Pinneberg </h4>
+              <h2>
+                Führen ein unabhängiges<br /> 
+                und selbstbestimmtes<br /> 
+                Leben in Ihrem Zuhause.
+              </h2>
+              <div className="items-wrapper">
+                <div className="item">
+                  <Ueberpruft />
+                  <p className="small">
+                    Häusliche Pflege
+                  </p>
+                </div>
+                <div className="item">
+                  <Ueberpruft />
+                  <p className="small">
+                    Medizinische Pflege
+                  </p>
+                </div>
+                <div className="item">
+                  <Ueberpruft />
+                  <p className="small">
+                    Persönlich & Herzlich
+                  </p>
+                </div>
+              </div>
+              <div className="buttons-wrapper">
+                <Button label="Jetzt Bewerben" />
+                <Link className="underlined" to="/">Unser Leistungen</Link>
               </div>
             </div>
           </div>
