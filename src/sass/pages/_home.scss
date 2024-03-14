@@ -101,4 +101,84 @@
       }
     }
   }
+
+  > #unsere_leistungen {
+    > .row { 
+      > .col {
+        @include max-width;
+      }
+      
+      &-1 {
+        background-color: $atlantis;
+        
+        > .col {
+          padding: 20px;
+
+          > h3 {
+            color: white;
+    
+            > span {
+              color: $beru;
+            }
+          }
+        }
+      }
+
+      &-2 {
+        background-color: $beru;
+
+        > .col {
+          padding: 50px 20px;
+
+          > .row {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+
+            > .col {
+              display: grid;
+              height: 450px;
+              width: 600px;
+              overflow: hidden;
+
+              > .gatsby-image-wrapper {
+                grid-area: 1/1;
+                filter: brightness(0.6);
+              }
+
+              > .content {
+                position: relative;
+                grid-area: 1/1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: end;
+                padding: 30px;
+                color: white;
+                text-align: center;
+
+                > h4 {
+                  color: $skyan;
+                  margin-bottom: 10px;
+                }
+
+                > p {
+                  margin-bottom: 40px;
+                }
+              }
+              
+              &-1 {
+                border-radius: 300px 40px 40px 40px;
+              }
+
+              &-2 {
+                border-radius: 40px 300px 40px 40px;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
 }

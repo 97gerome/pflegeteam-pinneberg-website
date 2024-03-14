@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout/layout";
 import Hero from "../components/hero";
 import { StaticImage } from "gatsby-plugin-image";
+import Button from "../components/button";
 
 const Home = () => {
   return (
@@ -66,6 +67,49 @@ const Home = () => {
             </div>
             <div className="col col-2">
               <StaticImage src="../images/houseparty.png" alt="Houseparty" />
+            </div>
+          </div>
+        </section>
+        <section id="unsere_leistungen">
+          <div className="row row-1">
+            <div className="col">
+              <h3>
+                Unsere
+                <br />
+                <span>
+                  Leistungen.
+                </span>
+              </h3>
+            </div>
+          </div>
+          <div className="row row-2">
+            <div className="col">
+              <div className="row">
+                <div className="col col-1">
+                  <StaticImage src="../images/haeusliche-pflege.png"/>
+                  <div className="content">
+                    <h4>
+                      Häusliche Pflege
+                    </h4>
+                    <p>
+                      Gerne übernehmen wir die pflegerische Versorgung in Ihrer eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und Behandlungspflege ganz nach Ihren individuellen Wünschen und Bedürfnissen durch.
+                    </p>
+                    <Button label="Mehr info" />
+                  </div>
+                </div>
+                <div className="col col-2">
+                  <StaticImage src="../images/betreuung.png" />
+                  <div className="content">
+                    <h4>
+                      Betreuung
+                    </h4>
+                    <p>
+                      Einfühlsam und kompetent unterstützt Sie unser Team bei psychiatrischen Krisen und in schwierigen Lebenssituationen, sodass  Sie den Weg zurück in ein selbstbestimmtes und glückliches Leben finden.
+                    </p>
+                    <Button label="Mehr info" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
