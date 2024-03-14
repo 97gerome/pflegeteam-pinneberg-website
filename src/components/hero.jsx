@@ -16,7 +16,7 @@ const Hero = () => {
               mit Herz.
             </span>
           </h1>
-          <p>
+          <p className="big">
             Wir sind für Senioren da – mit fachkundiger Hilfe im Haushalt
             und bei medizinischer Betreuung, alles mit Herz.
           </p>

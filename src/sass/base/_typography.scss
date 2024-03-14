@@ -33,3 +33,25 @@ h5 {
 h6 {
   font-size: 1.125rem;
 }
+
+p, a {
+  &.big {
+    font-size: 1.25rem;
+  }
+
+  &.small {
+    font-size: 0.875rem;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+  
+  &.italic {
+    font-style: italic;
+  }
+
+  &.center {
+    text-align: center;
+  }
+}

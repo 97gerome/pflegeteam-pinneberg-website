@@ -9,13 +9,13 @@ const Header = () => {
       <div className="row row-1">
         <div className="col">
           <div className="hyperlinks-wrapper">
-            <a href="">info@pflegeteam-pinneberg.de</a>
-            <a href="">04101 – 604 60 91</a>
-            <a href="">Termin Vereinbaren</a>
+            <a className="small" href="">info@pflegeteam-pinneberg.de</a>
+            <a className="small" href="">04101 – 604 60 91</a>
+            <a className="small" href="">Termin Vereinbaren</a>
           </div>
           <div className="languages-wrapper">
-            <a href="">DE</a>
-            <a href="">EN</a>
+            <a className="small" href="">DE</a>
+            <a className="small" href="">EN</a>
           </div>
         </div>
       </div>
