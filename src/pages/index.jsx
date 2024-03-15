@@ -8,9 +8,30 @@ import { Link } from "gatsby";
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout >
       <main id="home">
-        <Hero />
+        <Hero 
+          image={<StaticImage src="../images/happy-elderly-folk.png"/>}
+          content={
+            <>
+              <h1>
+                Ihr Pflegeteam
+                <br />
+                <span>
+                  mit Herz.
+                </span>
+              </h1>
+              <p className="big">
+                Wir sind für Senioren da – mit fachkundiger Hilfe im Haushalt
+                und bei medizinischer Betreuung, alles mit Herz.
+              </p>
+              <div className="buttons-wrapper">
+                <Button label="Jetzt Bewerben" />
+                <Link className="underlined" to="">Unser Leistungskatalog</Link>
+              </div>
+            </>
+          }
+        />
         <section id="pflegeteam_pinneberg">
           <div className="row row-1">
             <h3>Pflegeteam-Pinneberg </h3>

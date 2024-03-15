@@ -1,4 +1,28 @@
 #home {
+  > #hero {
+    > .row {
+      > .content {
+        > h1 {
+          margin-bottom: 20px;
+    
+          > span {
+            color: $beru;
+          }
+        }
+    
+        > p {
+          margin-bottom: 40px;
+        }
+    
+        .buttons-wrapper {
+          > a {
+            margin: 0px 30px;
+          }
+        }
+      }
+    }
+  }
+
   > #pflegeteam_pinneberg {
     background-color: white;
     padding: 50px 20px;
