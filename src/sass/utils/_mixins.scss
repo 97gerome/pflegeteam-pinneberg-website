@@ -4,11 +4,3 @@
   max-width: $max-width;
   margin: 0px auto;
 }
-
-//Components
-
-@mixin white-button {
-  background-color: white;
-  border: 1px solid $off-black;
-  color: $off-black;
-}
