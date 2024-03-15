@@ -1,8 +1,12 @@
+import clsx from "clsx";
 import React from "react";
 
-const Button = ({ label, onClick = () => {} }) => {
+const Button = ({ label, className, onClick = () => {} }) => {
   return (
-    <button className="button" onClick={onClick}>
+    <button 
+      className={clsx("button", className)} 
+      onClick={onClick}
+    >
       {label}
     </button>
   )
