@@ -62,11 +62,61 @@ const haeuslichePflegeList = [
         </span>
       </h4>,
     text: "Wir begleiten Sie bei Arzt- und Behördenbesuchen."
-  },
+  }
 ];
 
 const betreuungleistungenList = [
-
+  {
+    image: <StaticImage src="../images/einkaufdienst-fahrten.png" />,
+    heading:
+      <h4>
+        Familien-
+        <br />
+        <span>
+          betreuung
+        </span>
+      </h4>,
+    text: "Wir bieten Ihnen kurzfristige Hilfe in bestimmten Situationen oder langfristige Unterstützung bei der Bewältigung von Herausforderungen im Familienleben."
+  },
+  {
+    image: <StaticImage src="../images/reinigung-der-wohnung.png" />,
+    heading:
+      <h4>
+        Kinder-
+        <br />
+        <span>
+          betreuung
+        </span>
+      </h4>,
+    text: "Sie werden auf Bedürfnisse der Eltern und Kinder angepasst, sei es für regelmäßige Betreuung während der Arbeitszeiten oder für gelegentliche Unterstützung in speziellen Situationen."
+  },
+  {
+    image: <StaticImage src="../images/hausmeisterservice.png" />,
+    heading:
+      <h4>
+        Muttervertretung
+      </h4>,
+    text: "Wir übernehmen die Aufgaben von Ihnen als Mutter oder als Elternteil, sollten Sie zeitweise verhindert sein."
+  },
+  {
+    image: <StaticImage src="../images/gassiservice.png" />,
+    heading:
+      <h4>
+        Schulbegleitung
+      </h4>,
+    text: "Unsere Schulbegleitung ist darauf ausgerichtet, Schülern und Schülerinnen mit unterschiedlichen Bedürfnissen die bestmögliche Unterstützung zu bieten, damit sie erfolgreich am schulischen Leben teilnehmen können."
+  },
+  {
+    image: <StaticImage src="../images/arzt-behoerdenfahrten.png" />,
+    heading:
+      <h4>
+        Verhinderungs-
+        <span>
+          pflege
+        </span>
+      </h4>,
+    text: "Wir übernehmen zeitweise die Vertretung der Hauptpflegeperson, wenn diese verhindert sein sollte. "
+  },
 ];
 
 const Leistungen = () => {
@@ -144,6 +194,46 @@ const Leistungen = () => {
           <div className="row row-3">
             <div className="buttons-wrapper">
               <Button className="bordered" label="Leistungen anfordern"/>
+              <Link className="underlined" to="/">FAQs</Link>
+            </div>
+          </div>
+        </section>
+        <section id="betreuungleistungen">
+          <div className="row row-1">
+            <div className="col">
+              <h3>Unsere Betreuung-leistungen</h3>
+            </div>
+            <div className="col">
+              <p>Gerne übernehmen wir die pflegerische Versorgung in Ihrer eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und Behandlungspflege ganz nach Ihren individuellen Wünschen und Bedürfnissen durch.</p>
+            </div>
+          </div>
+          <div className="row row-2">
+            <div className="cards-wrapper">
+              {haeuslichePflegeList.map(({ image, heading, text }) =>
+                <ServicesCard
+                  image={image}
+                  content={
+                    <>
+                      <div className="heading-wrapper">
+                        {heading}
+                      </div>
+                      <div className="text-wrapper">
+                        <p>
+                          {text}
+                        </p>
+                      </div>
+                      <div className="buttons-wrapper">
+                        <Button className="white-button small-button" label="Mehr dazu" />
+                      </div>
+                    </>
+                  }
+                />
+              )}
+            </div>
+          </div>
+          <div className="row row-3">
+            <div className="buttons-wrapper">
+              <Button className="atlantis-button bordered" label="Leistungen anfordern"/>
               <Link className="underlined" to="/">FAQs</Link>
             </div>
           </div>

@@ -21,6 +21,10 @@
       border: 1px solid $off-black;
     }
   }
+
+  &.atlantis-button {
+    background-color: $atlantis;
+  }
   
   &.small-button {
     height: 40px;

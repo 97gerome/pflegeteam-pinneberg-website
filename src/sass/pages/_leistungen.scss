@@ -28,8 +28,7 @@
     }
   }
 
-  > #haeusliche_pflege, #betreuung_leistungen {
-    background-color: $fresh-salmon;
+  > #haeusliche_pflege, #betreuungleistungen {
     color: white;
 
     > .row {
@@ -66,5 +65,13 @@
         }
       }
     }
+  }
+
+  > #haeusliche_pflege {
+    background-color: $fresh-salmon;
+  }
+
+  > #betreuungleistungen {
+    background-color: $atlantis;
   }
 }
