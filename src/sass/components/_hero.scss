@@ -21,6 +21,24 @@
     > .content {
       max-width: 50%;
       padding: 20px;
+
+      > h1 {
+        margin-bottom: 20px;
+  
+        > span {
+          color: $beru;
+        }
+      }
+  
+      > p {
+        margin-bottom: 40px;
+      }
+  
+      .buttons-wrapper {
+        > a {
+          margin: 0px 30px;
+        }
+      }
     }
 
   }

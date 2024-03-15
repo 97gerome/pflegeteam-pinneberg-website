@@ -57,10 +57,6 @@
         > .buttons-wrapper {
           display: flex;
           gap: 20px;
-    
-          button:last-child {
-            @include white-button;
-          }
         }
       }
     }

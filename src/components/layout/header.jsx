@@ -31,7 +31,7 @@ const Header = () => {
           </nav>
           <div className="buttons-wrapper">
             <Button label='Jetzt Bewerben' />
-            <Button label='Ruf uns an!' />
+            <Button className="white-button bordered" label='Ruf uns an!' />
           </div>
         </div>
         </div>

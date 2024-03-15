@@ -1,0 +1,70 @@
+#leistungen {
+  > #leistungen_beschreibung {
+    height: 450px;
+    background-color: white;
+
+    > .row {
+      @include max-width;
+      display: flex;
+      gap: 50px;
+      height: 100%;
+
+      > .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 50px;
+        text-align: center;
+        padding: 50px 20px;
+
+        > h4 {
+          color: $atlantis;
+        }
+
+        > .buttons-wrapper {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  > #haeusliche_pflege, #betreuung_leistungen {
+    background-color: $fresh-salmon;
+    color: white;
+
+    > .row {
+
+      &-1 {
+        @include max-width;
+        display: flex;
+
+        > .col {
+          flex: 1;
+          padding: 50px 20px;
+        }
+      }
+
+      &-2 {
+        > .cards-wrapper {
+          padding: 0px 40px;
+          display: flex;
+          overflow-x: scroll;
+          gap: 20px;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      }
+
+      &-3 {
+        > .buttons-wrapper {
+          @include max-width;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+          padding: 50px 20px;
+        }
+      }
+    }
+  }
+}
