@@ -67,7 +67,7 @@ const haeuslichePflegeList = [
 
 const betreuungleistungenList = [
   {
-    image: <StaticImage src="../images/einkaufdienst-fahrten.png" />,
+    image: <StaticImage src="../images/familienbetreuung.png" />,
     heading:
       <h4>
         Familien-
@@ -79,7 +79,7 @@ const betreuungleistungenList = [
     text: "Wir bieten Ihnen kurzfristige Hilfe in bestimmten Situationen oder langfristige Unterstützung bei der Bewältigung von Herausforderungen im Familienleben."
   },
   {
-    image: <StaticImage src="../images/reinigung-der-wohnung.png" />,
+    image: <StaticImage src="../images/kinderbetreuung.png" />,
     heading:
       <h4>
         Kinder-
@@ -91,7 +91,7 @@ const betreuungleistungenList = [
     text: "Sie werden auf Bedürfnisse der Eltern und Kinder angepasst, sei es für regelmäßige Betreuung während der Arbeitszeiten oder für gelegentliche Unterstützung in speziellen Situationen."
   },
   {
-    image: <StaticImage src="../images/hausmeisterservice.png" />,
+    image: <StaticImage src="../images/muttervertretung.png" />,
     heading:
       <h4>
         Muttervertretung
@@ -99,7 +99,7 @@ const betreuungleistungenList = [
     text: "Wir übernehmen die Aufgaben von Ihnen als Mutter oder als Elternteil, sollten Sie zeitweise verhindert sein."
   },
   {
-    image: <StaticImage src="../images/gassiservice.png" />,
+    image: <StaticImage src="../images/schulbegleitung.png" />,
     heading:
       <h4>
         Schulbegleitung
@@ -107,7 +107,7 @@ const betreuungleistungenList = [
     text: "Unsere Schulbegleitung ist darauf ausgerichtet, Schülern und Schülerinnen mit unterschiedlichen Bedürfnissen die bestmögliche Unterstützung zu bieten, damit sie erfolgreich am schulischen Leben teilnehmen können."
   },
   {
-    image: <StaticImage src="../images/arzt-behoerdenfahrten.png" />,
+    image: <StaticImage src="../images/verhindungspflege.png" />,
     heading:
       <h4>
         Verhinderungs-
@@ -209,7 +209,7 @@ const Leistungen = () => {
           </div>
           <div className="row row-2">
             <div className="cards-wrapper">
-              {haeuslichePflegeList.map(({ image, heading, text }) =>
+              {betreuungleistungenList.map(({ image, heading, text }) =>
                 <ServicesCard
                   image={image}
                   content={
