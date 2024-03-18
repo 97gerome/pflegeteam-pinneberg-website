@@ -28,7 +28,7 @@
     }
   }
 
-  > #haeusliche_pflege, #betreuungleistungen {
+  > #haeusliche_pflege, > #betreuungleistungen {
     color: white;
 
     > .row {
@@ -73,5 +73,30 @@
 
   > #betreuungleistungen {
     background-color: $atlantis;
+  }
+
+  > #weiter_mit_pflegeteam_pinneberg {
+    background-color: white;
+
+    > .row {
+      > .col {
+        @include max-width;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
+        text-align: center;
+
+        > h3 {
+          font-weight: 800;
+        }
+
+        > .buttons-wrapper {
+          display: flex;
+          justify-content: center;
+          gap: 100px;
+        }
+      }
+    }
   }
 }

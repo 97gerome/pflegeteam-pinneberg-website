@@ -135,7 +135,7 @@ const Leistungen = () => {
                 </span>
               </h1>
               <p className="big">
-                Wir sind für Senioren da – mit fachkundiger Hilfe im Haushalt und bei medizinischer Betreuung, alles mit Herz.
+                Wir sind für Senioren da &ndash; mit fachkundiger Hilfe im Haushalt und bei medizinischer Betreuung, alles mit Herz.
               </p>
             </>
           }
@@ -235,6 +235,25 @@ const Leistungen = () => {
             <div className="buttons-wrapper">
               <Button className="atlantis-button bordered" label="Leistungen anfordern"/>
               <Link className="underlined" to="/">FAQs</Link>
+            </div>
+          </div>
+        </section>
+        <section id="weiter_mit_pflegeteam_pinneberg">
+          <div className="row">
+            <div className="col">
+              <h3>
+                So geht&apos;s weiter mit
+                <br />
+                Pflegeteam-Pinneberg!
+              </h3>
+              <p>
+                Sie erwägen, pflegerische Dienstleistungen vom PflegeTeam-Pinneberg zu beanspruchen?<br />
+                Wir unterstützen Sie gerne und erklären Ihnen den Aufnahmeablauf detailliert Schritt für Schritt!
+              </p>
+              <div className="buttons-wrapper">
+                <Button label="Aufnahmeablauf" />
+                <Button label="Beratungsleistungen" />
+              </div>
             </div>
           </div>
         </section>
