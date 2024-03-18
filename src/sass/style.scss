@@ -1,20 +1,19 @@
 //Utils
-@import "utils/mixins";
-@import "utils/variables";
+@import 'utils/mixins';
+@import 'utils/variables';
 
 //Base
-@import "base/reset";
-@import "base/general";
-@import "base/typography";
-
+@import 'base/reset';
+@import 'base/general';
+@import 'base/typography';
 
 //Components
-@import "components/header";
-@import "components/footer";
-@import "components/hero";
-@import "components/button";
-@import "components/services-card";
+@import 'components/header';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/button';
+@import 'components/services-card';
 
 //Pages
-@import "pages/home";
-@import "pages/leistungen";
+@import 'pages/home';
+@import 'pages/leistungen';

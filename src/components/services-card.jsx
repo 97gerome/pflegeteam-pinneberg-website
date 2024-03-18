@@ -5,12 +5,10 @@ const ServicesCard = ({ image, content }) => {
     <div className="services-card">
       {image}
       <div className="row">
-        <div className="content">
-          {content}
-        </div>
+        <div className="content">{content}</div>
       </div>
     </div>
-  )
+  );
 };
 
 export default ServicesCard;

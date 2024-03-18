@@ -1,21 +1,17 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import Logo from "../../images/pflegeteam-pinneberg-logo-white.svg";
-import FacebookLogo from "../../images/facebook-logo.svg";
-import InstagramLogo from "../../images/instagram-logo.svg";
+import Logo from '../../images/pflegeteam-pinneberg-logo-white.svg';
+import FacebookLogo from '../../images/facebook-logo.svg';
+import InstagramLogo from '../../images/instagram-logo.svg';
 
 const Footer = () => {
   return (
     <div id="footer">
       <div className="row">
         <div className="col col-1">
-          <h3>
-            Für ein sorgenfreies Leben mit Pflegeteam-Pinneberg
-          </h3>
+          <h3>Für ein sorgenfreies Leben mit Pflegeteam-Pinneberg</h3>
           <div className="services-wrapper">
-            <h5>
-              UNSERE LEISTUNGEN SEHEN
-            </h5>
+            <h5>UNSERE LEISTUNGEN SEHEN</h5>
           </div>
         </div>
         <div className="col col-2">
@@ -33,21 +29,15 @@ const Footer = () => {
             <h6>Kontakt</h6>
             <p>
               Tel.:&nbsp;
-              <a href="">
-                04101 – 604 60 91
-              </a>
+              <a href="">04101 – 604 60 91</a>
             </p>
             <p>
               Fax:&nbsp;
-              <a href="">
-                04101 – 604 76 95
-              </a>
+              <a href="">04101 – 604 76 95</a>
             </p>
             <p>
               Email:&nbsp;
-              <a href="">
-                info@pflegeteam-pinneberg.de
-              </a>
+              <a href="">info@pflegeteam-pinneberg.de</a>
             </p>
           </div>
           <p className="address">
@@ -63,11 +53,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="col col-4">
-          <Logo className="logo"/>
+          <Logo className="logo" />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Footer;

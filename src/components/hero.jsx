@@ -5,12 +5,10 @@ const Hero = ({ image, content }) => {
     <div id="hero">
       {image}
       <div className="row">
-        <div className="content">
-          {content}
-        </div>
+        <div className="content">{content}</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Hero;

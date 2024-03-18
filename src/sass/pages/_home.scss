@@ -32,18 +32,18 @@
 
   > #sorgenfreies_leben {
     height: 400px;
-    
+
     > .row {
       height: 100%;
       display: flex;
-      
+
       > .col {
         flex: 1;
-        
+
         &-1 {
           border-radius: 0px 80px 80px 0px;
           background-color: $clear-moon;
-          
+
           > .row {
             display: flex;
             flex-direction: column;
@@ -68,12 +68,11 @@
                 align-items: center;
                 gap: 15px;
 
-                
                 @for $i from 1 through 3 {
                   $margin-increment: calc(35 * ($i - 1));
 
                   &:nth-child(#{$i}) {
-                      margin-left: calc(10px + #{$margin-increment}px);
+                    margin-left: calc(10px + #{$margin-increment}px);
                   }
                 }
 
@@ -103,20 +102,20 @@
   }
 
   > #unsere_leistungen {
-    > .row { 
+    > .row {
       > .col {
         @include max-width;
       }
-      
+
       &-1 {
         background-color: $atlantis;
-        
+
         > .col {
           padding: 20px;
 
           > h3 {
             color: white;
-    
+
             > span {
               color: $beru;
             }
@@ -166,7 +165,7 @@
                   margin-bottom: 40px;
                 }
               }
-              
+
               &-1 {
                 border-radius: 300px 40px 40px 40px;
               }
@@ -174,7 +173,6 @@
               &-2 {
                 border-radius: 40px 300px 40px 40px;
               }
-
             }
           }
         }
@@ -200,7 +198,7 @@
           display: flex;
           justify-content: center;
         }
-        
+
         > .items-wrapper {
           gap: 50px;
           margin: 10px 0px 50px 0px;

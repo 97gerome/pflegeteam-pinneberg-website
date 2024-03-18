@@ -30,12 +30,12 @@
           margin-bottom: 50px;
 
           > h5::after {
-              content: "";
-              position: absolute;
-              left: 0;
-              bottom: -10px;
-              width: 200px;
-              border: 2px solid $banana-biscuit;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 200px;
+            border: 2px solid $banana-biscuit;
           }
         }
       }

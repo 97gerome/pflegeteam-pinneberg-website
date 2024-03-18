@@ -12,11 +12,11 @@
   &.bordered {
     border: 1px solid white;
   }
-  
+
   &.white-button {
     background-color: white;
     color: $off-black;
-  
+
     &.bordered {
       border: 1px solid $off-black;
     }
@@ -25,7 +25,7 @@
   &.atlantis-button {
     background-color: $atlantis;
   }
-  
+
   &.small-button {
     height: 40px;
     border-radius: 20px;
