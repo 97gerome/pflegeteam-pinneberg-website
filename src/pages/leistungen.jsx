@@ -581,7 +581,10 @@ const Leistungen = () => {
           </div>
           <div className="row row-3">
             <div className="buttons-wrapper">
-              <Button className="bordered" label="Leistungen anfordern" />
+              <Button
+                className="transparent-button bordered"
+                label="Leistungen anfordern"
+              />
               <Link className="underlined" to="/">
                 FAQs
               </Link>
@@ -617,7 +620,7 @@ const Leistungen = () => {
           <div className="row row-3">
             <div className="buttons-wrapper">
               <Button
-                className="atlantis-button bordered"
+                className="transparent-button bordered"
                 label="Leistungen anfordern"
               />
               <Link className="underlined" to="/">

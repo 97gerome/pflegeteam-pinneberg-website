@@ -71,10 +71,14 @@
           text-align: center;
 
           > .button {
-            background-color: $clear-moon;
             border: 1px solid $atlantis;
             color: $off-black;
             font-weight: 700;
+
+            &:hover {
+              background-color: transparent;
+              color: $atlantis;
+            }
           }
         }
       }

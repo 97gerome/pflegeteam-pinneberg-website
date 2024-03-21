@@ -69,10 +69,26 @@
 
   > #haeusliche_pflege {
     background-color: $fresh-salmon;
+
+    > .row-3 {
+      > .buttons-wrapper {
+        > .button:hover {
+          color: $fresh-salmon;
+        }
+      }
+    }
   }
 
   > #betreuungleistungen {
     background-color: $atlantis;
+
+    > .row-3 {
+      > .buttons-wrapper {
+        > .button:hover {
+          color: $atlantis;
+        }
+      }
+    }
   }
 
   > #weiter_mit_pflegeteam_pinneberg {

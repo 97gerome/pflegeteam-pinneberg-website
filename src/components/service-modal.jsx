@@ -11,7 +11,10 @@ const ServiceModal = ({ isOpen, onClose, image, heading, content }) => {
           <h4>{heading}</h4>
           <div className="content">{content}</div>
           <div className="buttons-wrapper">
-            <Button label="Leistungen anfordern" className="bordered" />
+            <Button
+              label="Leistungen anfordern"
+              className="transparent-button bordered"
+            />
           </div>
         </div>
       </div>
