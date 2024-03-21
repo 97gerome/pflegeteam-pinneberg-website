@@ -36,17 +36,17 @@
     color: $off-black;
 
     &:hover {
-      color: white;
       background-color: transparent;
       border: 1px solid white;
+      color: white !important;
     }
 
     &.bordered {
       border: 1px solid $off-black;
 
       &:hover {
-        color: $fresh-salmon;
         border: 1px solid $fresh-salmon;
+        color: $fresh-salmon !important;
       }
     }
   }

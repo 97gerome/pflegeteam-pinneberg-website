@@ -55,6 +55,10 @@
           justify-content: center;
           gap: 50px;
           flex: 1;
+
+          > a:hover {
+            color: $fresh-salmon;
+          }
         }
 
         > .buttons-wrapper {

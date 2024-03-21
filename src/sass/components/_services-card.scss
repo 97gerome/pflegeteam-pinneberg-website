@@ -48,6 +48,12 @@
       > .summary-wrapper {
         flex: 1 0;
       }
+
+      > .buttons-wrapper {
+        > .button {
+          color: $atlantis;
+        }
+      }
     }
   }
 }
