@@ -1,0 +1,27 @@
+.text-area {
+  > label {
+    font-size: 18px;
+    font-weight: bold;
+
+    > textarea {
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      border: 1px solid transparentize($atlantis, 0.4);
+      background-color: transparentize($atlantis, 0.95);
+      outline: none;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 300;
+      color: $off-black;
+      resize: none;
+
+      &:focus-visible {
+        border: 1px solid $atlantis;
+      }
+    }
+  }
+}
