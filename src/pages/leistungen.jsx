@@ -684,7 +684,7 @@ const Leistungen = () => {
             <div className="col col-2">
               <div className="content">
                 <h3>Unsere Partners</h3>
-                <div className="logos-wrapper">
+                <div className="socials-wrapper">
                   <StaticImage
                     src="../images/der-dozent-logo.png"
                     alt="Der Dozent"
