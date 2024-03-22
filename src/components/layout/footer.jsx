@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import Logo from '../../images/pflegeteam-pinneberg-logo-white.svg';
-import FacebookLogo from '../../images/facebook-logo.svg';
+import FacebookLogo from '../../images/facebook-logo-white.svg';
 import InstagramLogo from '../../images/instagram-logo.svg';
 
 const Footer = () => {
