@@ -13,7 +13,7 @@ const Header = () => {
               info@pflegeteam-pinneberg.de
             </a>
             <a className="small" href="">
-              04101 – 604 60 91
+              04101 &ndash; 604 60 91
             </a>
             <a className="small" href="">
               Termin Vereinbaren
