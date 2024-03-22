@@ -518,7 +518,7 @@ const Leistungen = () => {
                 <br />
                 <span>Kreis Pinneberg</span>
               </h1>
-              <p className="big">
+              <p className="extra-large">
                 Wir sind für Senioren da &ndash; mit fachkundiger Hilfe im
                 Haushalt und bei medizinischer Betreuung, alles mit Herz.
               </p>

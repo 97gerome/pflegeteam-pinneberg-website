@@ -42,16 +42,28 @@ h6 {
 
 p,
 a {
-  &.big {
+  &.extra-large {
     font-size: 1.25rem;
+  }
+
+  &.large {
+    font-size: 1.125rem;
   }
 
   &.small {
     font-size: 0.875rem;
   }
 
+  &.extra-small {
+    font-size: 0.75rem;
+  }
+
   &.bold {
     font-weight: bold;
+  }
+
+  &.semi-bold {
+    font-weight: 600;
   }
 
   &.italic {

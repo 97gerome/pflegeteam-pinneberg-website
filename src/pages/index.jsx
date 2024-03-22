@@ -19,7 +19,7 @@ const Home = () => {
                 <br />
                 <span>mit Herz.</span>
               </h1>
-              <p className="big">
+              <p className="extra-large">
                 Wir sind für Senioren da – mit fachkundiger Hilfe im Haushalt
                 und bei medizinischer Betreuung, alles mit Herz.
               </p>
@@ -35,7 +35,7 @@ const Home = () => {
         <section id="pflegeteam_pinneberg">
           <div className="row row-1">
             <h3>Pflegeteam-Pinneberg </h3>
-            <p className="big">
+            <p className="extra-large">
               Ihr Betreuungsdienst im Süden von Schleswig-Holstein
             </p>
           </div>
@@ -71,7 +71,7 @@ const Home = () => {
             <div className="col col-1">
               <div className="row">
                 <h3>Sorgenfreies Leben </h3>
-                <p className="big bold">
+                <p className="extra-large bold">
                   mit unserer umfassenden Unterstützung
                 </p>
                 <div className="items-wrapper">
