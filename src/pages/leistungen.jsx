@@ -713,3 +713,5 @@ const Leistungen = () => {
 };
 
 export default Leistungen;
+
+export const Head = () => <title>Leistungen</title>;
