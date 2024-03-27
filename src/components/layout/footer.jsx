@@ -11,7 +11,9 @@ const Footer = () => {
         <div className="col col-1">
           <h3>Für ein sorgenfreies Leben mit Pflegeteam-Pinneberg</h3>
           <div className="services-wrapper">
-            <h5>UNSERE LEISTUNGEN SEHEN</h5>
+            <Link className="extra-large bold" to="/leistungen">
+              UNSERE LEISTUNGEN SEHEN
+            </Link>
           </div>
         </div>
         <div className="col col-2">
@@ -21,7 +23,7 @@ const Footer = () => {
             <Link to="/leistungen">Leistungen</Link>
             <Link to="/ueber-uns">Über uns</Link>
             <Link to="/karriere">Karriere</Link>
-            <Link to="/kontakte">Kontakte</Link>
+            <Link to="/kontakt">Kontakt</Link>
           </nav>
         </div>
         <div className="col col-3">
@@ -29,15 +31,17 @@ const Footer = () => {
             <h6>Kontakt</h6>
             <p>
               Tel.:&nbsp;
-              <a href="">04101 – 604 60 91</a>
+              <a href="tel:04101 - 604 60 91">04101 &ndash; 604 60 91</a>
             </p>
             <p>
               Fax:&nbsp;
-              <a href="">04101 – 604 76 95</a>
+              <a href="tel:04101 - 604 76 95">04101 &ndash; 604 76 95</a>
             </p>
             <p>
               Email:&nbsp;
-              <a href="">info@pflegeteam-pinneberg.de</a>
+              <a href="mailto:info@pflegeteam-pinneberg.de">
+                info@pflegeteam-pinneberg.de
+              </a>
             </p>
           </div>
           <p className="address">

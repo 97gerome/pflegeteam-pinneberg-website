@@ -4,9 +4,12 @@ import Hero from '../components/hero';
 import Ueberpruft from '../images/ueberpruft.svg';
 import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../components/button';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 
 const Home = () => {
+  const toKarriere = () => navigate('/karriere');
+  const toLeistungen = () => navigate('/leistungen');
+
   return (
     <Layout>
       <main id="home">
@@ -24,8 +27,8 @@ const Home = () => {
                 und bei medizinischer Betreuung, alles mit Herz.
               </p>
               <div className="buttons-wrapper">
-                <Button label="Jetzt Bewerben" />
-                <Link className="underlined" to="">
+                <Button label="Jetzt Bewerben" onClick={toKarriere} />
+                <Link className="underlined" to="/leistungen">
                   Unser Leistungskatalog
                 </Link>
               </div>
@@ -131,7 +134,7 @@ const Home = () => {
                       und Behandlungspflege ganz nach Ihren individuellen
                       Wünschen und Bedürfnissen durch.
                     </p>
-                    <Button label="Mehr info" />
+                    <Button label="Mehr info" onClick={toLeistungen} />
                   </div>
                 </div>
                 <div className="col col-2">
@@ -144,7 +147,7 @@ const Home = () => {
                       Lebenssituationen, sodass Sie den Weg zurück in ein
                       selbstbestimmtes und glückliches Leben finden.
                     </p>
-                    <Button label="Mehr info" />
+                    <Button label="Mehr info" onClick={toLeistungen} />
                   </div>
                 </div>
               </div>
@@ -177,8 +180,8 @@ const Home = () => {
                 </div>
               </div>
               <div className="buttons-wrapper">
-                <Button label="Jetzt Bewerben" />
-                <Link className="underlined" to="/">
+                <Button label="Jetzt Bewerben" onClick={toKarriere} />
+                <Link className="underlined" to="/leistungen">
                   Unser Leistungen
                 </Link>
               </div>
