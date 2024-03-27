@@ -6,7 +6,7 @@ import { Link, navigate } from 'gatsby';
 const Header = () => {
   const toHome = () => navigate('/home');
   const toKarriere = () => navigate('/karriere');
-  const toKontake = () => navigate('/kontake');
+  const toKontakt = () => navigate('/kontakt');
 
   return (
     <div id="header">
@@ -48,7 +48,7 @@ const Header = () => {
             <Button
               className="white-button bordered"
               label="Ruf uns an!"
-              onClick={toKontake}
+              onClick={toKontakt}
             />
           </div>
         </div>
