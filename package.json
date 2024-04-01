@@ -5,7 +5,9 @@
   "description": "pflegeteam-pinneberg-website",
   "author": "Gerome Mandapat",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "frontend",
+    "website"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -15,6 +17,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@vis.gl/react-google-maps": "^0.8.2",
     "clsx": "^2.1.0",
     "gatsby": "^5.13.3",
     "gatsby-plugin-image": "^3.13.1",
