@@ -1,0 +1,58 @@
+#karriere {
+  #hero {
+    > .gatsby-image-wrapper {
+      filter: none;
+    }
+
+    > .row {
+      > .content {
+        > h1 {
+          color: $atlantis;
+          > span {
+            color: $fresh-salmon;
+          }
+        }
+      }
+    }
+  }
+
+  #als_arbeitgeber {
+    height: 500px;
+    color: $atlantis;
+
+    > .row {
+      @include max-width;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      > .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+      }
+    }
+  }
+
+  #wir_suchen_dich {
+    height: 400px;
+    background-color: $atlantis;
+    color: white;
+
+    > .row {
+      @include max-width;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 50px 20px;
+      text-align: center;
+
+      > h6 {
+        color: $beru;
+      }
+    }
+  }
+}
