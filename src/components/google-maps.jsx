@@ -1,14 +1,10 @@
-import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps';
+import { APIProvider, AdvancedMarker, Map } from '@vis.gl/react-google-maps';
 import React from 'react';
 
-const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+const apiKey = process.env.GATSBY_GOOGLE_MAPS_API_KEY;
+const mapId = process.env.GATSBY_MAP_ID;
 
-const coordinates = {
-  lat: 53.66120967307211,
-  lng: 9.79771487590366,
-};
-
-const GoogleMaps = () => {
+const GoogleMaps = ({ coordinates }) => {
   return (
     <APIProvider apiKey={apiKey}>
       <Map
@@ -16,8 +12,9 @@ const GoogleMaps = () => {
         defaultCenter={coordinates}
         defaultZoom={15}
         gestureHandling={'greedy'}
+        mapId={mapId}
       >
-        <Marker position={coordinates} />
+        <AdvancedMarker position={coordinates} />
       </Map>
     </APIProvider>
   );

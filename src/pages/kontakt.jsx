@@ -5,6 +5,11 @@ import InstagramLogo from '../images/instagram-logo-atlantis.svg';
 import ContactForm from '../components/contact-form';
 import GoogleMaps from '../components/google-maps';
 
+const coordinates = {
+  lat: 53.66120967307211,
+  lng: 9.79771487590366,
+};
+
 const Kontakt = () => {
   return (
     <Layout>
@@ -66,7 +71,7 @@ const Kontakt = () => {
         </section>
         <section id="map">
           <div className="row">
-            <GoogleMaps />
+            <GoogleMaps coordinates={coordinates} />
           </div>
         </section>
       </main>
