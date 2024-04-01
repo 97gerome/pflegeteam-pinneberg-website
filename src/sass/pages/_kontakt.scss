@@ -1,6 +1,10 @@
 #kontakt {
   color: $atlantis;
 
+  #ihr_kontakt_zu_uns {
+    padding-bottom: 80px;
+    padding-top: 20px;
+
   > .row {
     @include max-width;
     padding: 20px;
@@ -38,7 +42,7 @@
 
           > .contact-info-wrapper {
             display: grid;
-            grid-template-columns: 35% 65%;
+              grid-template-columns: 1fr 1.5fr;
             gap: 20px;
 
             > .label {
@@ -48,5 +52,30 @@
         }
       }
     }
+
+      &-3 {
+        display: flex;
+        gap: 40px;
+
+        > .col {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          flex: 1;
+
+          > .label {
+            color: $fresh-salmon;
+          }
+
+          &-1 {
+            > .geschaeftzeiten-wrapper {
+              display: grid;
+              grid-template-columns: 1fr 1.5fr;
+              gap: 20px;
+          }
+        }
+      }
+    }
+  }
   }
 }

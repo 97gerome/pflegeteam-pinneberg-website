@@ -3,11 +3,13 @@ import Layout from '../components/layout/layout';
 import FacebookLogo from '../images/facebook-logo-atlantis.svg';
 import InstagramLogo from '../images/instagram-logo-atlantis.svg';
 import ContactForm from '../components/contact-form';
+import GoogleMaps from '../components/google-maps';
 
 const Kontakt = () => {
   return (
     <Layout>
       <main id="kontakt">
+        <section id="ihr_kontakt_zu_uns">
         <div className="row row-1">
           <h2>Ihr Kontakt zu uns</h2>
         </div>
@@ -16,7 +18,9 @@ const Kontakt = () => {
             <h4>
               Haben Sie Fragen oder möchten Sie einen Termin vereinbaren?{' '}
             </h4>
-            <p className="large semi-bold">Unser Team ist gerne für Sie da!</p>
+              <p className="large semi-bold">
+                Unser Team ist gerne für Sie da!
+              </p>
             <p>
               Füllen Sie einfach das Kontaktformular aus, und wir setzen uns
               zeitnah mit Ihnen in Verbindung. Natürlich können Sie uns auch
@@ -43,7 +47,23 @@ const Kontakt = () => {
             <ContactForm />
           </div>
         </div>
-        <div className="row row-3"></div>
+          <div className="row row-3">
+            <div className="col col-1">
+              <p className="extra-large bold label">Geschäftszeiten</p>
+              <div className="geschaeftzeiten-wrapper">
+                <p>Montag bis Freitag</p>
+                <p>09 00 - 16 00</p>
+                <p>Samstag & Sonntag</p>
+                <p>Geschlossen</p>
+              </div>
+            </div>
+            <div className="col col-2">
+              <p className="extra-large bold label">Addresse</p>
+              <p>Dingstätte 18, 25421 Pinneberg</p>
+              <p>Deutschland</p>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );
