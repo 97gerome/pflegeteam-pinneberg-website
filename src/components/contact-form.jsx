@@ -9,8 +9,8 @@ const ContactForm = () => {
     <Form id="contact_form">
       <h4>Kontaktform</h4>
       <TextInput id="name_input" label="Name" />
-      <TextInput id="telefon_input" label="Telefon" />
-      <TextInput id="email_input" label="E-mail Addresse" />
+      <TextInput id="telefon_input" label="Telefon" type="tel" />
+      <TextInput id="email_input" label="E-mail Addresse" type="email" />
       <TextInput id="betreff_input" label="Betreff" />
       <TextArea id="nachricht_area" label="Nachricht" rows={8} />
       <div className="buttons-wrapper">
