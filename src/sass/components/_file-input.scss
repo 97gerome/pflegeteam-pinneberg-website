@@ -1,0 +1,30 @@
+.file-input {
+  > label {
+    font-weight: bold;
+
+    .input-wrapper {
+      margin-top: 5px;
+
+      > svg {
+        vertical-align: middle;
+      }
+
+      > p {
+        display: inline;
+        font-family: 'Archivo';
+        font-weight: 100;
+        font-style: italic;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+        vertical-align: middle;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+
+      > input {
+        display: none;
+      }
+    }
+  }
+}
