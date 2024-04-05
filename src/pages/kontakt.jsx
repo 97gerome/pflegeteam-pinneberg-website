@@ -4,11 +4,7 @@ import FacebookLogo from '../images/facebook-logo-atlantis.svg';
 import InstagramLogo from '../images/instagram-logo-atlantis.svg';
 import ContactForm from '../components/contact-form';
 import GoogleMaps from '../components/google-maps';
-
-const coordinates = {
-  lat: 53.66120967307211,
-  lng: 9.79771487590366,
-};
+import { coordinates } from '../util˚s/map';
 
 const Kontakt = () => {
   return (
