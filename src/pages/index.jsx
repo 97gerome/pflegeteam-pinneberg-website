@@ -124,7 +124,7 @@ const Home = () => {
           <div className="row row-2">
             <div className="col">
               <div className="row">
-                <div className="col col-1">
+                <div className="leistung">
                   <StaticImage src="../images/haeusliche-pflege.png" />
                   <div className="content">
                     <h4>Häusliche Pflege</h4>
@@ -137,7 +137,7 @@ const Home = () => {
                     <Button label="Mehr info" onClick={toLeistungen} />
                   </div>
                 </div>
-                <div className="col col-2">
+                <div className="leistung">
                   <StaticImage src="../images/betreuung.png" />
                   <div className="content">
                     <h4>Betreuung</h4>
