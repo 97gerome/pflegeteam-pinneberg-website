@@ -4,3 +4,20 @@
   max-width: $max-width;
   margin: 0px auto;
 }
+
+//Transitions
+
+@mixin transition(
+  $property: all,
+  $duration: 1s,
+  $timing-function: ease-in-out,
+  $delay: 0s
+) {
+  transition: $property $duration $timing-function $delay;
+}
+
+//Transformations
+
+@mixin scale-up($value: 1.1) {
+  transform: scale($value);
+}
