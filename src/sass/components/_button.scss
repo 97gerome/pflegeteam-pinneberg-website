@@ -1,4 +1,5 @@
 .button {
+  @include transition($duration: 0.2s);
   height: 50px;
   border-radius: 25px;
   border: 1px solid transparent;
@@ -9,7 +10,6 @@
   color: white;
   outline: none;
   cursor: pointer;
-  transition: all 0.25s ease;
 
   &:hover {
     background-color: white;

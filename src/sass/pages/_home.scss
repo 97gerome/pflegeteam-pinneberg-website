@@ -130,17 +130,17 @@
           padding: 50px 20px;
 
           > .row {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 50px;
 
-            > .col {
+            > .leistung {
               display: grid;
               height: 450px;
-              width: 600px;
               overflow: hidden;
 
               > .gatsby-image-wrapper {
+                @include transition(transform);
                 grid-area: 1/1;
                 filter: brightness(0.6);
               }
@@ -166,12 +166,18 @@
                 }
               }
 
-              &-1 {
+              &:nth-child(1) {
                 border-radius: 300px 50px 50px 50px;
               }
 
-              &-2 {
+              &:nth-child(2) {
                 border-radius: 50px 300px 50px 50px;
+              }
+
+              &:hover {
+                > .gatsby-image-wrapper {
+                  @include scale-up;
+                }
               }
             }
           }
