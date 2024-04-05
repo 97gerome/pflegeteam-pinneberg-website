@@ -1,6 +1,5 @@
 #leistungen {
   > #leistungen_beschreibung {
-    height: 450px;
     background-color: white;
 
     > .row {
@@ -10,10 +9,6 @@
       height: 100%;
 
       > .col {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 50px;
         text-align: center;
         padding: 50px 20px;
 
