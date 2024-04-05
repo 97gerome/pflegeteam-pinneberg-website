@@ -4,7 +4,7 @@ import FacebookLogo from '../images/facebook-logo-atlantis.svg';
 import InstagramLogo from '../images/instagram-logo-atlantis.svg';
 import ContactForm from '../components/contact-form';
 import GoogleMaps from '../components/google-maps';
-import { coordinates } from '../util˚s/map';
+import { coordinates } from '../utils/map';
 
 const Kontakt = () => {
   return (
@@ -65,11 +65,9 @@ const Kontakt = () => {
             </div>
           </div>
         </section>
-        <section id="map">
-          <div className="row">
-            <GoogleMaps coordinates={coordinates} />
-          </div>
-        </section>
+        <div id="map">
+          <GoogleMaps coordinates={coordinates} />
+        </div>
       </main>
     </Layout>
   );
