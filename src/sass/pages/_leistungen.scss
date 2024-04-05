@@ -17,8 +17,19 @@
         text-align: center;
         padding: 50px 20px;
 
+        > .gatsby-image-wrapper {
+          height: 100px;
+          width: 100px;
+          margin-bottom: 20px;
+        }
+
         > h4 {
           color: $atlantis;
+          margin-bottom: 40px;
+        }
+
+        > p {
+          margin-bottom: 40px;
         }
 
         > .buttons-wrapper {

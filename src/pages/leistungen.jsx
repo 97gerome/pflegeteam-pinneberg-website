@@ -528,6 +528,7 @@ const Leistungen = () => {
         <section id="leistungen_beschreibung">
           <div className="row">
             <div className="col">
+              <StaticImage src="../images/leistung-1-icon.png" />
               <h4>Häusliche Pflege</h4>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
@@ -540,6 +541,7 @@ const Leistungen = () => {
               </div>
             </div>
             <div className="col">
+              <StaticImage src="../images/leistung-2-icon.png" />
               <h4>Betreuung</h4>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
