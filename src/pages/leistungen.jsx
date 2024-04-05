@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Layout from '../components/layout/layout';
 import Hero from '../components/hero';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -6,6 +6,7 @@ import Button from '../components/button';
 import { Link } from 'gatsby';
 import ServicesCard from '../components/services-card';
 import ServiceModal from '../components/service-modal';
+import { useDraggable } from 'react-use-draggable-scroll';
 
 const haeuslichePflegeList = [
   {
@@ -495,6 +496,12 @@ const Leistungen = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalData, setModalData] = useState({});
 
+  const haeuslicheRef = useRef();
+  const betreuungRef = useRef();
+
+  const { events: haeuslicheEvents } = useDraggable(haeuslicheRef);
+  const { events: betreuungEvents } = useDraggable(betreuungRef);
+
   const handleModalOpen = (data) => {
     setModalData(data);
     setModalOpen(true);
@@ -570,7 +577,11 @@ const Leistungen = () => {
             </div>
           </div>
           <div className="row row-2">
-            <div className="cards-wrapper">
+            <div
+              className="cards-wrapper"
+              ref={haeuslicheRef}
+              {...haeuslicheEvents}
+            >
               {haeuslichePflegeList.map((current) => (
                 <ServicesCard
                   image={current.image}
@@ -608,7 +619,11 @@ const Leistungen = () => {
             </div>
           </div>
           <div className="row row-2">
-            <div className="cards-wrapper">
+            <div
+              className="cards-wrapper"
+              ref={betreuungRef}
+              {...betreuungEvents}
+            >
               {betreuungleistungenList.map((current) => (
                 <ServicesCard
                   image={current.image}

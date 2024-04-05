@@ -60,8 +60,12 @@
           display: flex;
           overflow-x: scroll;
           gap: 20px;
-          -ms-overflow-style: none;
-          scrollbar-width: none;
+
+          &::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 0;
+            height: 0;
+          }
         }
       }
 
