@@ -1,0 +1,48 @@
+#expressbewerbung_form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: $atlantis;
+  gap: 20px;
+
+  > * {
+    grid-column: 1 / span 2;
+  }
+
+  > h5,
+  > p {
+    text-align: center;
+  }
+
+  > h5 {
+    color: $fresh-salmon;
+  }
+
+  > p {
+    margin-bottom: 20px;
+  }
+
+  > #telefonnummer_input {
+    grid-column: 1 / 1;
+  }
+
+  > #email_input {
+    grid-column: 2 / 2;
+  }
+
+  > #lebenslauf_input {
+    grid-column: 1 / 1;
+  }
+
+  > #anschreiben_input {
+    grid-column: 2 / 2;
+  }
+
+  > #zustimmen_checkbox {
+    margin-bottom: 20px;
+  }
+
+  > .buttons-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
