@@ -1,0 +1,19 @@
+.checkbox {
+  > input {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+
+    &:checked {
+      accent-color: $atlantis;
+    }
+  }
+
+  > p {
+    display: inline;
+    font-family: 'Archivo';
+    font-weight: 100;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+}
