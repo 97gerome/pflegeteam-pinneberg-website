@@ -2,6 +2,9 @@ import React from 'react';
 import Layout from '../components/layout/layout';
 import Hero from '../components/hero';
 import { StaticImage } from 'gatsby-plugin-image';
+import ExpressbewerbungForm from '../components/expressbewerbung-form';
+import { coordinates } from '../utils/map';
+import GoogleMaps from '../components/google-maps';
 
 const Karriere = () => {
   return (
@@ -184,6 +187,22 @@ const Karriere = () => {
                 </li>
               </ol>
             </div>
+          </div>
+        </section>
+        <section id="lebensfreude">
+          <div className="row row-1">
+            <div className="col">
+              <h4>Lebensfreude und Lebensqualität &mdash;</h4>
+              <h5>dafür stehen wir, das Pflegeteam Pinneberg!</h5>
+            </div>
+          </div>
+          <div className="row row-2">
+            <div className="map-wrapper">
+              <div id="map">
+                <GoogleMaps coordinates={coordinates} controlled={true} />
+              </div>
+            </div>
+            <ExpressbewerbungForm />
           </div>
         </section>
       </main>
