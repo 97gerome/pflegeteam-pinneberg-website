@@ -197,10 +197,8 @@ const Karriere = () => {
             </div>
           </div>
           <div className="row row-2">
-            <div className="map-wrapper">
-              <div id="map">
-                <GoogleMaps coordinates={coordinates} controlled={true} />
-              </div>
+            <div id="map">
+              <GoogleMaps coordinates={coordinates} />
             </div>
             <ExpressbewerbungForm />
           </div>

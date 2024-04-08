@@ -198,26 +198,21 @@
       &-2 {
         display: grid;
         padding-top: 40px;
+        grid-template-rows: 1500px;
 
         > #expressbewerbung_form {
           position: relative;
           grid-area: 1/1;
           max-width: 800px;
-          margin: auto;
-          margin-bottom: 200px;
+          margin: 0px auto;
           box-shadow: 3px 3px $atlantis;
+          align-self: start;
         }
 
-        > .map-wrapper {
+        > #map {
           grid-area: 1/1;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-
-          > #map {
-            height: 400px;
-            filter: grayscale(0.8);
-          }
+          height: 400px;
+          align-self: end;
         }
       }
     }
