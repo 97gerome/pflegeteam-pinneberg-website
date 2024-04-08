@@ -9,7 +9,7 @@ import Checkbox from './checkbox';
 const ExpressbewerbungForm = () => {
   return (
     <Form id="expressbewerbung_form">
-      <h5>Expressbewerbung</h5>
+      <h4>Expressbewerbung</h4>
       <p>
         Wenn Sie Freude an der Betreuung von Menschen haben, empathisch sind und
         gerne im Team arbeiten, dann freuen wir uns auf Ihre Bewerbung!

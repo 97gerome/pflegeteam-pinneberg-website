@@ -45,7 +45,7 @@ const Karriere = () => {
         </section>
         <section id="wir_suchen_dich">
           <div className="row">
-            <h6>Wir suchen Dich!</h6>
+            <h4>Wir suchen Dich!</h4>
             <h3>
               Wir suchen für unseren Standort in <br /> Pinneberg eine
               engagierte und empathische <br /> Betreuungskraft im
@@ -104,40 +104,40 @@ const Karriere = () => {
         <section id="aufgaben">
           <div className="row">
             <div className="col col-1">
-              <h4>
+              <h3>
                 Aufgaben und <br /> Verantwortlichkeiten
-              </h4>
+              </h3>
               <ol>
                 <li>
-                  <h6>Betreuung und Unterstützung</h6>
+                  <h5>Betreuung und Unterstützung</h5>
                   <p>
                     Betreuung und Unterstützung von pflegebedürftigen Personen
                     im häuslichen Umfeld
                   </p>
                 </li>
                 <li>
-                  <h6>Durchführung</h6>
+                  <h5>Durchführung</h5>
                   <p>
                     Durchführung von hauswirtschaftlichen Tätigkeiten, Arzt-,
                     Behörden- und Einkaufsfahrten
                   </p>
                 </li>
                 <li>
-                  <h6>Unterstützung</h6>
+                  <h5>Unterstützung</h5>
                   <p>
                     Unterstützung bei der Alltagsbewältigung, Förderung der
                     Selbstständigkeit und Erhaltung der Lebensqualität
                   </p>
                 </li>
                 <li>
-                  <h6>Aktive Teilnahme</h6>
+                  <h5>Aktive Teilnahme</h5>
                   <p>
                     Aktive Teilnahme an der individuellen Pflegeplanung und
                     Dokumentation
                   </p>
                 </li>
                 <li>
-                  <h6>Gewährleistung</h6>
+                  <h5>Gewährleistung</h5>
                   <p>
                     Gewährleistung einer einfühlsamen und respektvollen
                     Betreuung unserer Klienten
@@ -156,10 +156,10 @@ const Karriere = () => {
               <StaticImage src="../images/anforderungen-image.png" />
             </div>
             <div className="col col-2">
-              <h4>Anforderungen</h4>
+              <h3>Anforderungen</h3>
               <ol>
                 <li>
-                  <h6>Abgeschlossene Ausbildung</h6>
+                  <h5>Abgeschlossene Ausbildung</h5>
                   <p>
                     Abgeschlossene Ausbildung als Betreuungskraft,
                     Altenpflegehelfer/in oder vergleichbare Qualifikation
@@ -168,22 +168,22 @@ const Karriere = () => {
                   </p>
                 </li>
                 <li>
-                  <h6>Berufserfahrung in der ambulanten Pflege </h6>
+                  <h5>Berufserfahrung in der ambulanten Pflege </h5>
                   <p>
                     Berufserfahrung in der ambulanten Pflege von Vorteil, aber
                     nicht zwingend erforderlich
                   </p>
                 </li>
                 <li>
-                  <h6>
+                  <h5>
                     Zuverlässigkeit, Verantwortungsbewusstsein und Flexibilität
-                  </h6>
+                  </h5>
                 </li>
                 <li>
-                  <h6>Gute Deutschkenntnisse in Wort und Schrift</h6>
+                  <h5>Gute Deutschkenntnisse in Wort und Schrift</h5>
                 </li>
                 <li>
-                  <h6>Führerschein Klasse B</h6>
+                  <h5>Führerschein Klasse B</h5>
                 </li>
               </ol>
             </div>
@@ -192,8 +192,8 @@ const Karriere = () => {
         <section id="lebensfreude">
           <div className="row row-1">
             <div className="col">
-              <h4>Lebensfreude und Lebensqualität &mdash;</h4>
-              <h5>dafür stehen wir, das Pflegeteam Pinneberg!</h5>
+              <h3>Lebensfreude und Lebensqualität &mdash;</h3>
+              <h4>dafür stehen wir, das Pflegeteam Pinneberg!</h4>
             </div>
           </div>
           <div className="row row-2">
@@ -211,3 +211,5 @@ const Karriere = () => {
 };
 
 export default Karriere;
+
+export const Head = () => <title>Karriere</title>;

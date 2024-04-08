@@ -51,7 +51,7 @@
       padding: 50px 20px;
       text-align: center;
 
-      > h6 {
+      > h4 {
         color: $beru;
       }
     }
@@ -133,12 +133,14 @@
             margin: 20px 0px;
 
             &::marker {
+              font-size: 1.25rem;
               color: $fresh-salmon;
               font-weight: bold;
             }
 
-            > h6 {
+            > h5 {
               color: $fresh-salmon;
+              margin-bottom: 5px;
             }
           }
         }
@@ -183,11 +185,11 @@
         > .col {
           text-align: center;
 
-          > h4 {
+          > h3 {
             color: $atlantis;
           }
 
-          > h5 {
+          > h4 {
             color: $fresh-salmon;
           }
         }
