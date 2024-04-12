@@ -1,10 +1,4 @@
-import {
-  APIProvider,
-  AdvancedMarker,
-  ControlPosition,
-  Map,
-  MapControl,
-} from '@vis.gl/react-google-maps';
+import { APIProvider, AdvancedMarker, Map } from '@vis.gl/react-google-maps';
 import React from 'react';
 
 const apiKey = process.env.GATSBY_GOOGLE_MAPS_API_KEY;
