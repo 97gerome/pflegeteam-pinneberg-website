@@ -4,7 +4,7 @@ import Button from '../button';
 import { Link, navigate } from 'gatsby';
 
 const Header = () => {
-  const toHome = () => navigate('/home');
+  const toHome = () => navigate('/');
   const toKarriere = () => navigate('/karriere');
   const toKontakt = () => navigate('/kontakt');
 
