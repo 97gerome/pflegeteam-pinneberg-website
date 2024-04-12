@@ -23,14 +23,6 @@ const Header = () => {
               Termin Vereinbaren
             </Link>
           </div>
-          <div className="languages-wrapper">
-            <a className="small" href="">
-              DE
-            </a>
-            <a className="small" href="">
-              EN
-            </a>
-          </div>
         </div>
       </div>
       <div className="row row-2">
