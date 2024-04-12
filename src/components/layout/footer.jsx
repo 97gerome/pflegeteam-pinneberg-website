@@ -9,7 +9,7 @@ const Footer = () => {
     <div id="footer">
       <div className="row">
         <div className="col col-1">
-          <h3>Für ein sorgenfreies Leben mit Pflegeteam-Pinneberg</h3>
+          <h2>Für ein sorgenfreies Leben mit Pflegeteam-Pinneberg</h2>
           <div className="services-wrapper">
             <Link className="extra-large bold" to="/leistungen">
               UNSERE LEISTUNGEN SEHEN
