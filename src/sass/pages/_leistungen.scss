@@ -10,9 +10,9 @@
 
       > .col {
         text-align: center;
-        padding: 50px 20px;
+        padding: 80px 20px 50px 20px;
 
-        > .gatsby-image-wrapper {
+        > svg {
           height: 100px;
           width: 100px;
           margin-bottom: 20px;
@@ -36,6 +36,7 @@
 
   > #haeusliche_pflege,
   > #betreuungleistungen {
+    scroll-margin-top: 141px;
     color: white;
 
     > .row {
@@ -46,6 +47,18 @@
         > .col {
           flex: 1;
           padding: 50px 20px;
+
+          &-2 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            > svg {
+              height: 80px;
+              width: 80px;
+              flex-shrink: 0;
+            }
+          }
         }
       }
 
@@ -83,10 +96,24 @@
       background-color: $fresh-salmon;
     }
 
-    > .row-3 {
-      > .buttons-wrapper {
-        > .button:hover {
-          color: $fresh-salmon;
+    > .row {
+      &-1 {
+        > .col {
+          &-2 {
+            > svg {
+              path {
+                fill: $atlantis;
+              }
+            }
+          }
+        }
+      }
+
+      &-3 {
+        > .buttons-wrapper {
+          > .button:hover {
+            color: $fresh-salmon;
+          }
         }
       }
     }
@@ -100,10 +127,24 @@
       background-color: $atlantis;
     }
 
-    > .row-3 {
-      > .buttons-wrapper {
-        > .button:hover {
-          color: $atlantis;
+    > .row {
+      &-1 {
+        > .col {
+          &-2 {
+            > svg {
+              path {
+                fill: $fresh-salmon;
+              }
+            }
+          }
+        }
+      }
+
+      &-3 {
+        > .buttons-wrapper {
+          > .button:hover {
+            color: $atlantis;
+          }
         }
       }
     }

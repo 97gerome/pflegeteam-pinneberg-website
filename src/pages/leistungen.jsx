@@ -3,13 +3,15 @@ import Layout from '../components/layout/layout';
 import Hero from '../components/hero';
 import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../components/button';
-import { Link } from 'gatsby';
 import ServicesCard from '../components/services-card';
 import ServiceModal from '../components/service-modal';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CustomLeftArrow from '../components/custom-left-arrow';
 import CustomRightArrow from '../components/custom-right-arrow';
+import HaeuslichePflege from '../images/haeusliche-pflege-icon.svg';
+import Betreuung from '../images/betreuung-icon.svg';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const responsive = {
   extraLargeDesktop: {
@@ -531,6 +533,14 @@ const Leistungen = () => {
     setModalOpen(false);
   };
 
+  const scrollToHaeuslichePflege = () => {
+    scrollTo('#haeusliche_pflege');
+  };
+
+  const scrollToBetreuungLeistungen = () => {
+    scrollTo('#betreuungleistungen');
+  };
+
   return (
     <Layout>
       <main id="leistungen">
@@ -555,7 +565,7 @@ const Leistungen = () => {
         <section id="leistungen_beschreibung">
           <div className="row">
             <div className="col">
-              <StaticImage src="../images/leistung-1-icon.png" />
+              <HaeuslichePflege />
               <h4>Häusliche Pflege</h4>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
@@ -564,11 +574,14 @@ const Leistungen = () => {
                 Bedürfnissen durch.{' '}
               </p>
               <div className="buttons-wrapper">
-                <Button label="Leistungen erkunden" />
+                <Button
+                  label="Mehr entdecken"
+                  onClick={scrollToHaeuslichePflege}
+                />
               </div>
             </div>
             <div className="col">
-              <StaticImage src="../images/leistung-2-icon.png" />
+              <Betreuung />
               <h4>Betreuung</h4>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
@@ -577,22 +590,27 @@ const Leistungen = () => {
                 Bedürfnissen durch.{' '}
               </p>
               <div className="buttons-wrapper">
-                <Button label="Leistungen erkunden" />
+                <Button
+                  label="Mehr entdecken"
+                  onClick={scrollToBetreuungLeistungen}
+                />
               </div>
             </div>
           </div>
         </section>
         <section id="haeusliche_pflege">
           <div className="row row-1">
-            <div className="col">
+            <div className="col col-1">
               <h3>Unsere Häusliche Pflege Leistungen</h3>
             </div>
-            <div className="col">
+            <div className="col col-2">
+              <HaeuslichePflege />
               <p>
-                Gerne übernehmen wir die pflegerische Versorgung in Ihrer
-                eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und
-                Behandlungspflege ganz nach Ihren individuellen Wünschen und
-                Bedürfnissen durch.{' '}
+                Wir bieten maßgeschneiderte Pflege in Ihrem Zuhause an, ganz
+                nach Ihren Wünschen und Bedürfnissen. Unsere professionellen
+                Pflegekräfte sind darauf spezialisiert, Ihnen die bestmögliche
+                Betreuung zu bieten, damit Sie sich sicher und wohl fühlen
+                können.
               </p>
             </div>
           </div>
@@ -623,23 +641,22 @@ const Leistungen = () => {
                 className="transparent-button bordered"
                 label="Leistungen anfordern"
               />
-              <Link className="underlined" to="/">
-                FAQs
-              </Link>
             </div>
           </div>
         </section>
         <section id="betreuungleistungen">
           <div className="row row-1">
-            <div className="col">
+            <div className="col col-1">
               <h3>Unsere Betreuung-leistungen</h3>
             </div>
-            <div className="col">
+            <div className="col col-2">
+              <Betreuung />
               <p>
-                Gerne übernehmen wir die pflegerische Versorgung in Ihrer
-                eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und
-                Behandlungspflege ganz nach Ihren individuellen Wünschen und
-                Bedürfnissen durch.
+                Unser einfühlsames Team begleitet Sie durch psychiatrische
+                Krisen und schwierige Lebenssituationen. Wir sind hier, um Ihnen
+                zu helfen, den Weg zu einem selbstbestimmten und glücklichen
+                Leben zurückzufinden. Mit unserer Unterstützung können Sie Ihre
+                Stärken entdecken und Ihre Lebensqualität verbessern.
               </p>
             </div>
           </div>
@@ -670,9 +687,6 @@ const Leistungen = () => {
                 className="transparent-button bordered"
                 label="Leistungen anfordern"
               />
-              <Link className="underlined" to="/">
-                FAQs
-              </Link>
             </div>
           </div>
         </section>
