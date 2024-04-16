@@ -176,7 +176,7 @@
 
               &:hover {
                 > .gatsby-image-wrapper {
-                  @include scale-up;
+                  @include scale;
                 }
               }
             }

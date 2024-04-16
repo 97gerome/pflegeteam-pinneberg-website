@@ -18,6 +18,6 @@
 
 //Transformations
 
-@mixin scale-up($value: 1.1) {
+@mixin scale($value: 1.1) {
   transform: scale($value);
 }
