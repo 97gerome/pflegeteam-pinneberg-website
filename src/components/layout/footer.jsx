@@ -21,7 +21,6 @@ const Footer = () => {
           <nav>
             <Link to="/">Home</Link>
             <Link to="/leistungen">Leistungen</Link>
-            <Link to="/ueber-uns">Über uns</Link>
             <Link to="/karriere">Karriere</Link>
             <Link to="/kontakt">Kontakt</Link>
           </nav>
