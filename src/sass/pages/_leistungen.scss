@@ -50,11 +50,15 @@
       }
 
       &-2 {
-        > .cards-wrapper {
-          padding: 0px 40px;
-          display: flex;
-          overflow-x: scroll;
-          gap: 20px;
+        > .carousel-container {
+          > ul {
+            padding-left: 40px;
+
+            > .carousel-item {
+              height: 550px;
+              padding: 0px 10px;
+            }
+          }
         }
       }
 
@@ -74,6 +78,11 @@
   > #haeusliche_pflege {
     background-color: $fresh-salmon;
 
+    .custom-left-arrow,
+    .custom-right-arrow {
+      background-color: $fresh-salmon;
+    }
+
     > .row-3 {
       > .buttons-wrapper {
         > .button:hover {
@@ -85,6 +94,11 @@
 
   > #betreuungleistungen {
     background-color: $atlantis;
+
+    .custom-left-arrow,
+    .custom-right-arrow {
+      background-color: $atlantis;
+    }
 
     > .row-3 {
       > .buttons-wrapper {

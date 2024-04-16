@@ -6,6 +6,33 @@ import Button from '../components/button';
 import { Link } from 'gatsby';
 import ServicesCard from '../components/services-card';
 import ServiceModal from '../components/service-modal';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import CustomLeftArrow from '../components/custom-left-arrow';
+import CustomRightArrow from '../components/custom-right-arrow';
+
+const responsive = {
+  extraLargeDesktop: {
+    breakpoint: { max: 4000, min: 2400 },
+    items: 5,
+  },
+  largeDesktop: {
+    breakpoint: { max: 2400, min: 1700 },
+    items: 4,
+  },
+  desktop: {
+    breakpoint: { max: 1700, min: 1300 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1300, min: 500 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 500, min: 0 },
+    items: 2,
+  },
+};
 
 const haeuslichePflegeList = [
   {
@@ -570,7 +597,16 @@ const Leistungen = () => {
             </div>
           </div>
           <div className="row row-2">
-            <div className="cards-wrapper">
+            <Carousel
+              responsive={responsive}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2500}
+              containerClass="carousel-container"
+              itemClass="carousel-item"
+              customLeftArrow={<CustomLeftArrow />}
+              customRightArrow={<CustomRightArrow />}
+            >
               {haeuslichePflegeList.map((current) => (
                 <ServicesCard
                   image={current.image}
@@ -579,7 +615,7 @@ const Leistungen = () => {
                   onMoreClick={() => handleModalOpen(current)}
                 />
               ))}
-            </div>
+            </Carousel>
           </div>
           <div className="row row-3">
             <div className="buttons-wrapper">
@@ -608,7 +644,16 @@ const Leistungen = () => {
             </div>
           </div>
           <div className="row row-2">
-            <div className="cards-wrapper">
+            <Carousel
+              responsive={responsive}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2500}
+              containerClass="carousel-container"
+              itemClass="carousel-item"
+              customLeftArrow={<CustomLeftArrow />}
+              customRightArrow={<CustomRightArrow />}
+            >
               {betreuungleistungenList.map((current) => (
                 <ServicesCard
                   image={current.image}
@@ -617,7 +662,7 @@ const Leistungen = () => {
                   onMoreClick={() => handleModalOpen(current)}
                 />
               ))}
-            </div>
+            </Carousel>
           </div>
           <div className="row row-3">
             <div className="buttons-wrapper">
