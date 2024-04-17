@@ -12,6 +12,7 @@ import CustomRightArrow from '../components/custom-right-arrow';
 import HaeuslichePflege from '../images/haeusliche-pflege-icon.svg';
 import Betreuung from '../images/betreuung-icon.svg';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { navigate } from 'gatsby';
 
 const responsive = {
   extraLargeDesktop: {
@@ -541,6 +542,10 @@ const Leistungen = () => {
     scrollTo('#betreuungleistungen');
   };
 
+  const toKontakt = () => {
+    navigate('/kontakt');
+  };
+
   return (
     <Layout>
       <main id="leistungen">
@@ -640,6 +645,7 @@ const Leistungen = () => {
               <Button
                 className="transparent-button bordered"
                 label="Leistungen anfordern"
+                onClick={toKontakt}
               />
             </div>
           </div>
@@ -686,6 +692,7 @@ const Leistungen = () => {
               <Button
                 className="transparent-button bordered"
                 label="Leistungen anfordern"
+                onClick={toKontakt}
               />
             </div>
           </div>
@@ -706,8 +713,7 @@ const Leistungen = () => {
                 detailliert Schritt für Schritt!
               </p>
               <div className="buttons-wrapper">
-                <Button label="Aufnahmeablauf" />
-                <Button label="Beratungsleistungen" />
+                <Button label="Ruf uns an!" onClick={toKontakt} />
               </div>
             </div>
           </div>
