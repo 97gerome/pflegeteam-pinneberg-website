@@ -1,12 +1,16 @@
 #hero {
   height: 600px;
   display: grid;
+  background-color: white;
 
   > .gatsby-image-wrapper {
+    @include background-overlay(
+      linear-gradient(to right, transparentize($off-black, 0.6), transparent)
+    );
     grid-area: 1/1;
     height: 100%;
     width: 100%;
-    filter: brightness(0.6);
+    animation: fade-in 0.5s ease-in;
   }
 
   > .row {
@@ -15,12 +19,12 @@
     grid-area: 1/1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     color: white;
 
     > .content {
       max-width: 50%;
-      padding: 20px;
+      padding: 50px 20px;
 
       > h1 {
         margin-bottom: 20px;
