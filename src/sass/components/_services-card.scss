@@ -1,27 +1,32 @@
 .services-card {
-  flex: 1 0 500px;
   display: grid;
-  border-radius: 50px;
-  overflow: hidden;
   height: 100%;
   width: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+
   > .gatsby-image-wrapper {
     @include transition(transform);
     grid-area: 1/1;
-    height: 100%;
-    width: 100%;
-    filter: brightness(0.7);
+    height: inherit;
+    width: inherit;
+    filter: brightness(0.8);
+    z-index: -1;
   }
 
   > .row {
     position: relative;
+    height: inherit;
+    width: inherit;
     grid-area: 1/1;
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
 
     > .content {
+      position: absolute;
+      right: 0;
+      bottom: 50px;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -29,7 +34,6 @@
       width: 360px;
       background-color: transparentize($atlantis, 0.4);
       border-radius: 20px 0px 0px 20px;
-      margin-bottom: 50px;
       padding: 30px 20px;
 
       > .heading-wrapper {
