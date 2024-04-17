@@ -16,6 +16,14 @@
           height: 100px;
           width: 100px;
           margin-bottom: 20px;
+
+          #group_1 {
+            fill: $fresh-salmon;
+          }
+
+          #group_2 {
+            fill: $atlantis;
+          }
         }
 
         > h4 {
@@ -64,9 +72,13 @@
 
       &-2 {
         > .carousel-container {
-          > ul {
-            padding-left: 40px;
+          cursor: grab;
 
+          &:active {
+            cursor: grabbing;
+          }
+
+          > ul {
             > .carousel-item {
               height: 550px;
               padding: 0px 10px;
