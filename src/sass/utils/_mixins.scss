@@ -21,3 +21,17 @@
 @mixin scale($value: 1.1) {
   transform: scale($value);
 }
+
+//Utils
+
+@mixin background-overlay($background) {
+  &:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $background;
+  }
+}

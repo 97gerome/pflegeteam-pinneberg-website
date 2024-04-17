@@ -136,13 +136,13 @@
 
             > .leistung {
               display: grid;
-              height: 450px;
+              height: 550px;
               overflow: hidden;
 
               > .gatsby-image-wrapper {
                 @include transition(transform);
+                @include background-overlay(transparentize($off-black, 0.6));
                 grid-area: 1/1;
-                filter: brightness(0.6);
               }
 
               > .content {
@@ -152,12 +152,17 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-end;
-                padding: 30px;
+                padding: 30px 80px;
                 color: white;
                 text-align: center;
 
+                > svg {
+                  height: 120px;
+                  width: 120px;
+                  margin-bottom: 30px;
+                }
+
                 > h4 {
-                  color: $skyan;
                   margin-bottom: 10px;
                 }
 
@@ -177,6 +182,12 @@
               &:hover {
                 > .gatsby-image-wrapper {
                   @include scale;
+                }
+
+                > .content {
+                  > svg {
+                    animation: bounce 1s ease;
+                  }
                 }
               }
             }

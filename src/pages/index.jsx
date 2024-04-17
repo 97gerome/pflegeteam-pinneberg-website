@@ -5,6 +5,8 @@ import Ueberpruft from '../images/ueberpruft.svg';
 import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../components/button';
 import { Link, navigate } from 'gatsby';
+import HaeuslichePflegeIcon from '../images/haeusliche-pflege-icon.svg';
+import BetreuungIcon from '../images/betreuung-icon.svg';
 
 const Home = () => {
   const toKarriere = () => navigate('/karriere');
@@ -14,7 +16,7 @@ const Home = () => {
     <Layout>
       <main id="home">
         <Hero
-          image={<StaticImage src="../images/happy-elderly-folk.png" />}
+          image={<StaticImage src="../images/home-hero-image.png" />}
           content={
             <>
               <h1>
@@ -127,6 +129,7 @@ const Home = () => {
                 <div className="leistung">
                   <StaticImage src="../images/haeusliche-pflege.png" />
                   <div className="content">
+                    <HaeuslichePflegeIcon />
                     <h4>Häusliche Pflege</h4>
                     <p>
                       Gerne übernehmen wir die pflegerische Versorgung in Ihrer
@@ -140,6 +143,7 @@ const Home = () => {
                 <div className="leistung">
                   <StaticImage src="../images/betreuung.png" />
                   <div className="content">
+                    <BetreuungIcon />
                     <h4>Betreuung</h4>
                     <p>
                       Einfühlsam und kompetent unterstützt Sie unser Team bei
@@ -182,7 +186,7 @@ const Home = () => {
               <div className="buttons-wrapper">
                 <Button label="Jetzt Bewerben" onClick={toKarriere} />
                 <Link className="underlined" to="/leistungen">
-                  Unser Leistungen
+                  Unser Leistungskatalog
                 </Link>
               </div>
             </div>
