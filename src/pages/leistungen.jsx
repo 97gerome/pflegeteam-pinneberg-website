@@ -554,17 +554,11 @@ const Leistungen = () => {
             <StaticImage src="../images/unsere-leistungen-kreis-pinneberg.png" />
           }
           content={
-            <>
-              <h1>
-                Unsere Leistungen
-                <br />
-                <span>Kreis Pinneberg</span>
-              </h1>
-              <p className="extra-large">
-                Wir sind für Senioren da &ndash; mit fachkundiger Hilfe im
-                Haushalt und bei medizinischer Betreuung, alles mit Herz.
-              </p>
-            </>
+            <h1>
+              Unsere Leistungen
+              <br />
+              <span>Kreis Pinneberg</span>
+            </h1>
           }
         />
         <section id="leistungen_beschreibung">
