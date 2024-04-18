@@ -9,8 +9,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CustomLeftArrow from '../components/custom-left-arrow';
 import CustomRightArrow from '../components/custom-right-arrow';
-import HaeuslichePflege from '../images/haeusliche-pflege-icon.svg';
-import Betreuung from '../images/betreuung-icon.svg';
+import HaeuslichePflegeIcon from '../images/haeusliche-pflege-icon.svg';
+import BetreuungIcon from '../images/betreuung-icon.svg';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { navigate } from 'gatsby';
 
@@ -570,7 +570,7 @@ const Leistungen = () => {
         <section id="leistungen_beschreibung">
           <div className="row">
             <div className="col">
-              <HaeuslichePflege />
+              <HaeuslichePflegeIcon />
               <h4>Häusliche Pflege</h4>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
@@ -586,7 +586,7 @@ const Leistungen = () => {
               </div>
             </div>
             <div className="col">
-              <Betreuung />
+              <BetreuungIcon />
               <h4>Betreuung</h4>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
@@ -609,7 +609,7 @@ const Leistungen = () => {
               <h3>Unsere Häusliche Pflege Leistungen</h3>
             </div>
             <div className="col col-2">
-              <HaeuslichePflege />
+              <HaeuslichePflegeIcon />
               <p>
                 Wir bieten maßgeschneiderte Pflege in Ihrem Zuhause an, ganz
                 nach Ihren Wünschen und Bedürfnissen. Unsere professionellen
@@ -656,7 +656,7 @@ const Leistungen = () => {
               <h3>Unsere Betreuung-leistungen</h3>
             </div>
             <div className="col col-2">
-              <Betreuung />
+              <BetreuungIcon />
               <p>
                 Unser einfühlsames Team begleitet Sie durch psychiatrische
                 Krisen und schwierige Lebenssituationen. Wir sind hier, um Ihnen
