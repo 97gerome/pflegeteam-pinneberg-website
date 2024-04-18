@@ -618,7 +618,7 @@ const Leistungen = () => {
               responsive={responsive}
               infinite={true}
               autoPlay={true}
-              autoPlaySpeed={2500}
+              autoPlaySpeed={2000}
               containerClass="carousel-container"
               itemClass="carousel-item"
               customLeftArrow={<CustomLeftArrow />}
@@ -665,7 +665,7 @@ const Leistungen = () => {
               responsive={responsive}
               infinite={true}
               autoPlay={true}
-              autoPlaySpeed={2500}
+              autoPlaySpeed={2000}
               containerClass="carousel-container"
               itemClass="carousel-item"
               customLeftArrow={<CustomLeftArrow />}
