@@ -59,12 +59,24 @@ a {
     font-size: 0.75rem;
   }
 
+  &.thin {
+    font-weight: 100;
+  }
+
+  &.light {
+    font-weight: 300;
+  }
+
   &.bold {
     font-weight: bold;
   }
 
   &.semi-bold {
     font-weight: 600;
+  }
+
+  &.extra-bold {
+    font-weight: 900;
   }
 
   &.italic {
