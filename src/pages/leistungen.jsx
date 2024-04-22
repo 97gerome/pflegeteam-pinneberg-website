@@ -1,12 +1,41 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/layout/layout';
 import Hero from '../components/hero';
 import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../components/button';
-import { Link } from 'gatsby';
 import ServicesCard from '../components/services-card';
 import ServiceModal from '../components/service-modal';
-import { useDraggable } from 'react-use-draggable-scroll';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import CustomLeftArrow from '../components/custom-left-arrow';
+import CustomRightArrow from '../components/custom-right-arrow';
+import HaeuslichePflegeIcon from '../images/haeusliche-pflege-icon.svg';
+import BetreuungIcon from '../images/betreuung-icon.svg';
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import { navigate } from 'gatsby';
+
+const responsive = {
+  extraLargeDesktop: {
+    breakpoint: { max: 4000, min: 2400 },
+    items: 5,
+  },
+  largeDesktop: {
+    breakpoint: { max: 2400, min: 1700 },
+    items: 4,
+  },
+  desktop: {
+    breakpoint: { max: 1700, min: 1300 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1300, min: 500 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 500, min: 0 },
+    items: 2,
+  },
+};
 
 const haeuslichePflegeList = [
   {
@@ -496,12 +525,6 @@ const Leistungen = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalData, setModalData] = useState({});
 
-  const haeuslicheRef = useRef();
-  const betreuungRef = useRef();
-
-  const { events: haeuslicheEvents } = useDraggable(haeuslicheRef);
-  const { events: betreuungEvents } = useDraggable(betreuungRef);
-
   const handleModalOpen = (data) => {
     setModalData(data);
     setModalOpen(true);
@@ -509,6 +532,18 @@ const Leistungen = () => {
 
   const handleModalClose = () => {
     setModalOpen(false);
+  };
+
+  const scrollToHaeuslichePflege = () => {
+    scrollTo('#haeusliche_pflege');
+  };
+
+  const scrollToBetreuungLeistungen = () => {
+    scrollTo('#betreuungleistungen');
+  };
+
+  const toKontakt = () => {
+    navigate('/kontakt');
   };
 
   return (
@@ -519,24 +554,18 @@ const Leistungen = () => {
             <StaticImage src="../images/unsere-leistungen-kreis-pinneberg.png" />
           }
           content={
-            <>
-              <h1>
-                Unsere Leistungen
-                <br />
-                <span>Kreis Pinneberg</span>
-              </h1>
-              <p className="extra-large">
-                Wir sind für Senioren da &ndash; mit fachkundiger Hilfe im
-                Haushalt und bei medizinischer Betreuung, alles mit Herz.
-              </p>
-            </>
+            <h1>
+              Unsere Leistungen
+              <br />
+              <span>Kreis Pinneberg</span>
+            </h1>
           }
         />
         <section id="leistungen_beschreibung">
           <div className="row">
             <div className="col">
-              <StaticImage src="../images/leistung-1-icon.png" />
-              <h4>Häusliche Pflege</h4>
+              <HaeuslichePflegeIcon />
+              <h5>Häusliche Pflege</h5>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
                 eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und
@@ -544,12 +573,15 @@ const Leistungen = () => {
                 Bedürfnissen durch.{' '}
               </p>
               <div className="buttons-wrapper">
-                <Button label="Leistungen erkunden" />
+                <Button
+                  label="Mehr entdecken"
+                  onClick={scrollToHaeuslichePflege}
+                />
               </div>
             </div>
             <div className="col">
-              <StaticImage src="../images/leistung-2-icon.png" />
-              <h4>Betreuung</h4>
+              <BetreuungIcon />
+              <h5>Betreuung</h5>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
                 eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und
@@ -557,30 +589,44 @@ const Leistungen = () => {
                 Bedürfnissen durch.{' '}
               </p>
               <div className="buttons-wrapper">
-                <Button label="Leistungen erkunden" />
+                <Button
+                  label="Mehr entdecken"
+                  onClick={scrollToBetreuungLeistungen}
+                />
               </div>
             </div>
           </div>
         </section>
         <section id="haeusliche_pflege">
           <div className="row row-1">
-            <div className="col">
-              <h3>Unsere Häusliche Pflege Leistungen</h3>
+            <div className="col col-1">
+              <h4>
+                Unsere Häusliche
+                <br />
+                Pflege Leistungen
+              </h4>
             </div>
-            <div className="col">
+            <div className="col col-2">
+              <HaeuslichePflegeIcon />
               <p>
-                Gerne übernehmen wir die pflegerische Versorgung in Ihrer
-                eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und
-                Behandlungspflege ganz nach Ihren individuellen Wünschen und
-                Bedürfnissen durch.{' '}
+                Wir bieten maßgeschneiderte Pflege in Ihrem Zuhause an, ganz
+                nach Ihren Wünschen und Bedürfnissen. Unsere professionellen
+                Pflegekräfte sind darauf spezialisiert, Ihnen die bestmögliche
+                Betreuung zu bieten, damit Sie sich sicher und wohl fühlen
+                können.
               </p>
             </div>
           </div>
           <div className="row row-2">
-            <div
-              className="cards-wrapper"
-              ref={haeuslicheRef}
-              {...haeuslicheEvents}
+            <Carousel
+              responsive={responsive}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2000}
+              containerClass="carousel-container"
+              itemClass="carousel-item"
+              customLeftArrow={<CustomLeftArrow />}
+              customRightArrow={<CustomRightArrow />}
             >
               {haeuslichePflegeList.map((current) => (
                 <ServicesCard
@@ -590,39 +636,48 @@ const Leistungen = () => {
                   onMoreClick={() => handleModalOpen(current)}
                 />
               ))}
-            </div>
+            </Carousel>
           </div>
           <div className="row row-3">
             <div className="buttons-wrapper">
               <Button
                 className="transparent-button bordered"
                 label="Leistungen anfordern"
+                onClick={toKontakt}
               />
-              <Link className="underlined" to="/">
-                FAQs
-              </Link>
             </div>
           </div>
         </section>
         <section id="betreuungleistungen">
           <div className="row row-1">
-            <div className="col">
-              <h3>Unsere Betreuung-leistungen</h3>
+            <div className="col col-1">
+              <h4>
+                Unsere Betreuung-
+                <br />
+                leistungen
+              </h4>
             </div>
-            <div className="col">
+            <div className="col col-2">
+              <BetreuungIcon />
               <p>
-                Gerne übernehmen wir die pflegerische Versorgung in Ihrer
-                eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und
-                Behandlungspflege ganz nach Ihren individuellen Wünschen und
-                Bedürfnissen durch.
+                Unser einfühlsames Team begleitet Sie durch psychiatrische
+                Krisen und schwierige Lebenssituationen. Wir sind hier, um Ihnen
+                zu helfen, den Weg zu einem selbstbestimmten und glücklichen
+                Leben zurückzufinden. Mit unserer Unterstützung können Sie Ihre
+                Stärken entdecken und Ihre Lebensqualität verbessern.
               </p>
             </div>
           </div>
           <div className="row row-2">
-            <div
-              className="cards-wrapper"
-              ref={betreuungRef}
-              {...betreuungEvents}
+            <Carousel
+              responsive={responsive}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2000}
+              containerClass="carousel-container"
+              itemClass="carousel-item"
+              customLeftArrow={<CustomLeftArrow />}
+              customRightArrow={<CustomRightArrow />}
             >
               {betreuungleistungenList.map((current) => (
                 <ServicesCard
@@ -632,17 +687,15 @@ const Leistungen = () => {
                   onMoreClick={() => handleModalOpen(current)}
                 />
               ))}
-            </div>
+            </Carousel>
           </div>
           <div className="row row-3">
             <div className="buttons-wrapper">
               <Button
                 className="transparent-button bordered"
                 label="Leistungen anfordern"
+                onClick={toKontakt}
               />
-              <Link className="underlined" to="/">
-                FAQs
-              </Link>
             </div>
           </div>
         </section>
@@ -654,7 +707,7 @@ const Leistungen = () => {
                 <br />
                 Pflegeteam-Pinneberg!
               </h3>
-              <p>
+              <p className="large thin">
                 Sie erwägen, pflegerische Dienstleistungen vom
                 PflegeTeam-Pinneberg zu beanspruchen?
                 <br />
@@ -662,8 +715,7 @@ const Leistungen = () => {
                 detailliert Schritt für Schritt!
               </p>
               <div className="buttons-wrapper">
-                <Button label="Aufnahmeablauf" />
-                <Button label="Beratungsleistungen" />
+                <Button label="Ruf uns an!" onClick={toKontakt} />
               </div>
             </div>
           </div>
@@ -672,7 +724,7 @@ const Leistungen = () => {
           <div className="row">
             <div className="col col-1">
               <div className="content">
-                <h3>Vermittlung von</h3>
+                <h4>Vermittlung von</h4>
                 <ul>
                   <li>
                     Pflegehilfsmitteln (z. B. Bett, Nachtstuhl,
@@ -700,7 +752,7 @@ const Leistungen = () => {
             </div>
             <div className="col col-2">
               <div className="content">
-                <h3>Unsere Partners</h3>
+                <h4>Unsere Partners</h4>
                 <div className="partners-wrapper">
                   <StaticImage
                     src="../images/der-dozent-logo.png"

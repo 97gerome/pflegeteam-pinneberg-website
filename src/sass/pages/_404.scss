@@ -1,0 +1,33 @@
+#not_found {
+  height: calc(100vh - 590px);
+  background-color: white;
+
+  > .row {
+    @include max-width;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    isolation: isolate;
+
+    > svg {
+      position: absolute;
+      right: 50%;
+      grid-area: 1/1;
+      height: 300px;
+      z-index: -1;
+    }
+
+    > h1 {
+      color: $atlantis;
+    }
+
+    > h4 {
+      color: $fresh-salmon;
+      margin-bottom: 50px;
+    }
+  }
+}

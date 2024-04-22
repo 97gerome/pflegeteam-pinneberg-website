@@ -8,7 +8,7 @@ const ServicesCard = ({ image, heading, summary, onMoreClick }) => {
       <div className="row">
         <div className="content">
           <div className="heading-wrapper">
-            <h4>{heading}</h4>
+            <h5>{heading}</h5>
           </div>
           <div className="summary-wrapper">
             <p>{summary}</p>

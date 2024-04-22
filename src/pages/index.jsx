@@ -5,6 +5,11 @@ import Ueberpruft from '../images/ueberpruft.svg';
 import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../components/button';
 import { Link, navigate } from 'gatsby';
+import HaeuslichePflegeIcon from '../images/haeusliche-pflege-icon.svg';
+import BetreuungIcon from '../images/betreuung-icon.svg';
+import MedizinischeBetreuungIcon from '../images/medizinische-betreuung-icon.svg';
+import HausarbeitIcon from '../images/hausarbeit-icon.svg';
+import PersoenlicherAnsprechpartnerIcon from '../images/persoenlicher-ansprechpartner-icon.svg';
 
 const Home = () => {
   const toKarriere = () => navigate('/karriere');
@@ -14,7 +19,7 @@ const Home = () => {
     <Layout>
       <main id="home">
         <Hero
-          image={<StaticImage src="../images/happy-elderly-folk.png" />}
+          image={<StaticImage src="../images/home-hero-image.png" />}
           content={
             <>
               <h1>
@@ -23,8 +28,8 @@ const Home = () => {
                 <span>mit Herz.</span>
               </h1>
               <p className="extra-large">
-                Wir sind für Senioren da – mit fachkundiger Hilfe im Haushalt
-                und bei medizinischer Betreuung, alles mit Herz.
+                Wir sind für Senioren da &ndash; mit fachkundiger Hilfe im
+                Haushalt und bei medizinischer Betreuung, alles mit Herz.
               </p>
               <div className="buttons-wrapper">
                 <Button label="Jetzt Bewerben" onClick={toKarriere} />
@@ -37,18 +42,18 @@ const Home = () => {
         />
         <section id="pflegeteam_pinneberg">
           <div className="row row-1">
-            <h3>Pflegeteam-Pinneberg </h3>
+            <h4>Pflegeteam-Pinneberg </h4>
             <p className="extra-large">
               Ihr Betreuungsdienst im Süden von Schleswig-Holstein
             </p>
           </div>
           <div className="row row-2">
             <div className="col col-1">
-              <h4>10.000+</h4>
+              <h5>10.000+</h5>
               <p className="italic center">Hausbesuche</p>
             </div>
             <div className="col col-2">
-              <h4>350+</h4>
+              <h5>350+</h5>
               <p className="italic center">
                 Klient*innen
                 <br />
@@ -56,11 +61,11 @@ const Home = () => {
               </p>
             </div>
             <div className="col col-3">
-              <h4>10.000+</h4>
+              <h5>10.000+</h5>
               <p className="italic center">Stunden Pflegezeit</p>
             </div>
             <div className="col col-4">
-              <h4>20</h4>
+              <h5>20</h5>
               <p className="italic center">
                 Hochmotivierte
                 <br />
@@ -70,55 +75,44 @@ const Home = () => {
           </div>
         </section>
         <section id="sorgenfreies_leben">
+          <StaticImage src="../images/sorgenfreies-leben-image.png" alt="" />
           <div className="row">
-            <div className="col col-1">
-              <div className="row">
-                <h3>Sorgenfreies Leben </h3>
-                <p className="extra-large bold">
-                  mit unserer umfassenden Unterstützung
-                </p>
-                <div className="items-wrapper">
-                  <div className="item">
-                    <StaticImage
-                      src="../images/sorgenfreies-leben-houseplant.png"
-                      alt="Houseplant"
-                    />
-                    <p className="italic">
-                      Keine Sorgen mehr bei der Hausarbeit
-                    </p>
-                  </div>
-                  <div className="item">
-                    <StaticImage
-                      src="../images/sorgenfreies-leben-medical-services.png"
-                      alt="Medical Services"
-                    />
-                    <p className="italic">Umfassende medizinische Betreuung</p>
-                  </div>
-                  <div className="item">
-                    <StaticImage
-                      src="../images/sorgenfreies-leben-phone.png"
-                      alt="Phone"
-                    />
-                    <p className="italic">
-                      Persönlicher Ansprechpartner und Team
-                    </p>
-                  </div>
+            <div className="col">
+              <h2>Sorgenfreies Leben </h2>
+              <p className="extra-large semi-bold">
+                mit unserer umfassenden Unterstützung
+              </p>
+              <div className="items-wrapper">
+                <div className="item">
+                  <MedizinischeBetreuungIcon />
+                  <p className="large semi-bold">
+                    Umfassende medizinische Betreuung
+                  </p>
+                </div>
+                <div className="item">
+                  <HausarbeitIcon />
+                  <p className="large semi-bold">
+                    Keine Sorgen mehr bei der Hausarbeit
+                  </p>
+                </div>
+                <div className="item">
+                  <PersoenlicherAnsprechpartnerIcon />
+                  <p className="large semi-bold">
+                    Persönlicher Ansprechpartner und Team
+                  </p>
                 </div>
               </div>
-            </div>
-            <div className="col col-2">
-              <StaticImage src="../images/houseparty.png" alt="Houseparty" />
             </div>
           </div>
         </section>
         <section id="unsere_leistungen">
           <div className="row row-1">
             <div className="col">
-              <h3>
+              <h4>
                 Unsere
                 <br />
                 <span>Leistungen.</span>
-              </h3>
+              </h4>
             </div>
           </div>
           <div className="row row-2">
@@ -127,7 +121,8 @@ const Home = () => {
                 <div className="leistung">
                   <StaticImage src="../images/haeusliche-pflege.png" />
                   <div className="content">
-                    <h4>Häusliche Pflege</h4>
+                    <HaeuslichePflegeIcon />
+                    <h5>Häusliche Pflege</h5>
                     <p>
                       Gerne übernehmen wir die pflegerische Versorgung in Ihrer
                       eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund-
@@ -140,7 +135,8 @@ const Home = () => {
                 <div className="leistung">
                   <StaticImage src="../images/betreuung.png" />
                   <div className="content">
-                    <h4>Betreuung</h4>
+                    <BetreuungIcon />
+                    <h5>Betreuung</h5>
                     <p>
                       Einfühlsam und kompetent unterstützt Sie unser Team bei
                       psychiatrischen Krisen und in schwierigen
@@ -157,7 +153,7 @@ const Home = () => {
         <section id="mit_pflegeteam_pinneberg">
           <div className="row">
             <div className="col">
-              <h4>Mit Pflegeteam-Pinneberg </h4>
+              <h5>Mit Pflegeteam-Pinneberg </h5>
               <h2>
                 Führen ein unabhängiges
                 <br />
@@ -182,7 +178,7 @@ const Home = () => {
               <div className="buttons-wrapper">
                 <Button label="Jetzt Bewerben" onClick={toKarriere} />
                 <Link className="underlined" to="/leistungen">
-                  Unser Leistungen
+                  Unser Leistungskatalog
                 </Link>
               </div>
             </div>

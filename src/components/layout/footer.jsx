@@ -9,7 +9,7 @@ const Footer = () => {
     <div id="footer">
       <div className="row">
         <div className="col col-1">
-          <h2>Für ein sorgenfreies Leben mit Pflegeteam-Pinneberg</h2>
+          <h4>Für ein sorgenfreies Leben mit Pflegeteam-Pinneberg</h4>
           <div className="services-wrapper">
             <Link className="extra-large bold" to="/leistungen">
               UNSERE LEISTUNGEN SEHEN
@@ -17,18 +17,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="col col-2">
-          <h6>Nützliche Links</h6>
+          <p className="large bold">Nützliche Links</p>
           <nav>
             <Link to="/">Home</Link>
             <Link to="/leistungen">Leistungen</Link>
-            <Link to="/ueber-uns">Über uns</Link>
             <Link to="/karriere">Karriere</Link>
             <Link to="/kontakt">Kontakt</Link>
           </nav>
         </div>
         <div className="col col-3">
           <div className="contact-wrapper">
-            <h6>Kontakt</h6>
+            <p className="large bold">Kontakt</p>
             <p>
               Tel.:&nbsp;
               <a href="tel:04101 - 604 60 91">04101 &ndash; 604 60 91</a>

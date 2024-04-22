@@ -5,6 +5,19 @@
   background-color: $clear-moon;
   overflow: hidden;
 
+  &::backdrop {
+    background-color: transparentize($off-black, 0.4);
+    backdrop-filter: blur(5px);
+  }
+
+  &[open] {
+    animation: slide-up 0.3s ease-in, fade-in 0.2s ease-in;
+
+    &::backdrop {
+      animation: blur 0.2s ease-in;
+    }
+  }
+
   > .row {
     height: 100%;
     display: flex;
@@ -28,7 +41,7 @@
         flex: 1;
         padding: 30px 80px 30px 40px;
 
-        > h4 {
+        > h5 {
           color: $atlantis;
           margin-bottom: 10px;
         }
@@ -36,8 +49,6 @@
         > .content {
           flex: 1 0;
           overflow-y: scroll;
-          -ms-overflow-style: none;
-          scrollbar-width: none;
           margin-bottom: 10px;
 
           > * {

@@ -21,7 +21,7 @@
         justify-content: space-between;
         flex: 2;
 
-        > h2 {
+        > h4 {
           color: $beru;
         }
 
@@ -51,7 +51,9 @@
       }
 
       &-2 {
-        gap: 20px;
+        > p {
+          margin-bottom: 20px;
+        }
 
         > nav {
           display: flex;
@@ -73,12 +75,8 @@
         flex: 1.5;
 
         .contact-wrapper {
-          > h6 {
-            margin-bottom: 20px;
-          }
-
           > p {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
 
             > a {
               @include transition(color, 0.5s);
