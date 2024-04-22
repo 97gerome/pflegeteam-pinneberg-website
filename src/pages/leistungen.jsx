@@ -565,7 +565,7 @@ const Leistungen = () => {
           <div className="row">
             <div className="col">
               <HaeuslichePflegeIcon />
-              <h4>Häusliche Pflege</h4>
+              <h5>Häusliche Pflege</h5>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
                 eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und
@@ -581,7 +581,7 @@ const Leistungen = () => {
             </div>
             <div className="col">
               <BetreuungIcon />
-              <h4>Betreuung</h4>
+              <h5>Betreuung</h5>
               <p>
                 Gerne übernehmen wir die pflegerische Versorgung in Ihrer
                 eigenen Häuslichkeit. Unsere Pflegekräfte führen Grund- und
@@ -600,7 +600,11 @@ const Leistungen = () => {
         <section id="haeusliche_pflege">
           <div className="row row-1">
             <div className="col col-1">
-              <h3>Unsere Häusliche Pflege Leistungen</h3>
+              <h4>
+                Unsere Häusliche
+                <br />
+                Pflege Leistungen
+              </h4>
             </div>
             <div className="col col-2">
               <HaeuslichePflegeIcon />
@@ -647,7 +651,11 @@ const Leistungen = () => {
         <section id="betreuungleistungen">
           <div className="row row-1">
             <div className="col col-1">
-              <h3>Unsere Betreuung-leistungen</h3>
+              <h4>
+                Unsere Betreuung-
+                <br />
+                leistungen
+              </h4>
             </div>
             <div className="col col-2">
               <BetreuungIcon />
@@ -699,7 +707,7 @@ const Leistungen = () => {
                 <br />
                 Pflegeteam-Pinneberg!
               </h3>
-              <p>
+              <p className="large thin">
                 Sie erwägen, pflegerische Dienstleistungen vom
                 PflegeTeam-Pinneberg zu beanspruchen?
                 <br />
@@ -716,7 +724,7 @@ const Leistungen = () => {
           <div className="row">
             <div className="col col-1">
               <div className="content">
-                <h3>Vermittlung von</h3>
+                <h4>Vermittlung von</h4>
                 <ul>
                   <li>
                     Pflegehilfsmitteln (z. B. Bett, Nachtstuhl,
@@ -744,7 +752,7 @@ const Leistungen = () => {
             </div>
             <div className="col col-2">
               <div className="content">
-                <h3>Unsere Partners</h3>
+                <h4>Unsere Partners</h4>
                 <div className="partners-wrapper">
                   <StaticImage
                     src="../images/der-dozent-logo.png"

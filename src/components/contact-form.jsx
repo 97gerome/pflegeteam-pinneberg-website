@@ -7,7 +7,7 @@ import TextArea from './text-area';
 const ContactForm = () => {
   return (
     <Form id="contact_form">
-      <h4>Kontaktform</h4>
+      <h5>Kontaktform</h5>
       <TextInput id="name_input" label="Name" />
       <TextInput id="telefon_input" label="Telefon" type="tel" />
       <TextInput id="email_input" label="E-mail Addresse" type="email" />

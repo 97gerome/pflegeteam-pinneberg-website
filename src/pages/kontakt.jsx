@@ -12,13 +12,13 @@ const Kontakt = () => {
       <main id="kontakt">
         <section id="ihr_kontakt_zu_uns">
           <div className="row row-1">
-            <h2>Ihr Kontakt zu uns</h2>
+            <h3>Ihr Kontakt zu uns</h3>
           </div>
           <div className="row row-2">
             <div className="col col-1">
-              <h4>
+              <h5>
                 Haben Sie Fragen oder möchten Sie einen Termin vereinbaren?{' '}
-              </h4>
+              </h5>
               <p className="large semi-bold">
                 Unser Team ist gerne für Sie da!
               </p>
@@ -31,7 +31,7 @@ const Kontakt = () => {
                 <FacebookLogo />
                 <InstagramLogo />
               </div>
-              <h4>Kontakt Informationen</h4>
+              <h5>Kontakt Informationen</h5>
               <div className="contact-info-wrapper">
                 <p className="extra-large bold label">Rufen Sie uns an</p>
                 <div className="contact-numbers-wrapper">

@@ -13,7 +13,7 @@ const ServiceModal = ({ isOpen, onClose, image, heading, content }) => {
       <div className="row">
         <div className="col col-1">{image}</div>
         <div className="col col-2">
-          <h4>{heading}</h4>
+          <h5>{heading}</h5>
           <div className="content">{content}</div>
           <div className="buttons-wrapper">
             <Button
