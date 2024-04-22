@@ -20,38 +20,49 @@
     height: 500px;
     color: $atlantis;
     background-color: white;
+    overflow: hidden;
 
     > .row {
       @include max-width;
-      height: 100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      height: 100%;
+      padding: 20px;
+      isolation: isolate;
 
       > .col {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 10px;
-        padding: 20px;
+
+        > svg {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          height: 110%;
+          z-index: -1;
+        }
       }
     }
   }
 
   #wir_suchen_dich {
-    height: 400px;
+    height: 500px;
     background-color: $atlantis;
     color: white;
 
     > .row {
       @include max-width;
-      height: 100%;
+      height: inherit;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 50px 20px;
+      padding: 80px 20px;
       text-align: center;
 
-      > h4 {
+      > h5 {
         color: $beru;
       }
     }
@@ -66,37 +77,45 @@
       &-1 {
         padding: 80px 20px 20px 20px;
 
-        > h3 {
+        > h4 {
           color: $fresh-salmon;
           text-align: center;
+          margin-bottom: 20px;
         }
       }
 
       &-2 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px 20px 80px 20px;
-
-        > .col {
-          display: flex;
-          flex-direction: column;
-          flex: 1;
-          justify-content: center;
-          gap: 40px;
-          height: 100%;
+        > .benefits-wrapper {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          row-gap: 40px;
+          column-gap: 50px;
 
           > .benefit {
+            display: grid;
+            grid-template-rows: max-content max-content auto;
+            justify-items: center;
+            border: 2px solid $atlantis;
+            border-radius: 20px;
+            padding: 40px;
             text-align: center;
             color: $atlantis;
 
-            > .gatsby-image-wrapper {
-              height: 80px;
-              width: 80px;
+            > svg {
+              margin-bottom: 20px;
             }
 
-            > h5 {
-              margin: 15px 0px;
+            > h6 {
+              margin-bottom: 10px;
+            }
+
+            > p {
+              align-self: flex-end;
+            }
+
+            &:first-child {
+              display: grid;
+              grid-area: 1 / span 4;
             }
           }
         }
@@ -133,14 +152,14 @@
             margin: 20px 0px;
 
             &::marker {
-              font-size: 1.25rem;
+              font-size: 1.5rem;
               color: $fresh-salmon;
               font-weight: bold;
             }
 
-            > h5 {
+            > h6 {
               color: $fresh-salmon;
-              margin-bottom: 5px;
+              margin-bottom: 10px;
             }
           }
         }
@@ -185,11 +204,11 @@
         > .col {
           text-align: center;
 
-          > h3 {
+          > h4 {
             color: $atlantis;
           }
 
-          > h4 {
+          > h5 {
             color: $fresh-salmon;
           }
         }
