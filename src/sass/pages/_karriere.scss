@@ -17,7 +17,6 @@
   }
 
   #als_arbeitgeber {
-    height: 500px;
     color: $atlantis;
     background-color: white;
     overflow: hidden;
@@ -25,10 +24,10 @@
     > .row {
       @include max-width;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      height: 100%;
-      padding: 20px;
-      isolation: isolate;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 20px;
+      min-height: 500px;
+      padding: 50px 20px;
 
       > .col {
         position: relative;
@@ -39,10 +38,7 @@
 
         > svg {
           position: absolute;
-          top: 0px;
-          left: 0px;
-          height: 110%;
-          z-index: -1;
+          width: 100%;
         }
       }
     }
@@ -90,6 +86,7 @@
           grid-template-columns: repeat(4, 1fr);
           row-gap: 40px;
           column-gap: 50px;
+          padding: 20px 20px 80px 20px;
 
           > .benefit {
             display: grid;
@@ -115,8 +112,12 @@
 
             &:first-child {
               display: grid;
-              grid-area: 1 / span 4;
+              grid-column: 1 / -1;
             }
+          }
+
+          @media (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
           }
         }
       }
@@ -125,7 +126,7 @@
 
   #aufgaben,
   #anforderungen {
-    background-color: $doctor;
+    background-color: white;
 
     > .row {
       @include max-width;
@@ -194,7 +195,7 @@
   }
 
   #lebensfreude {
-    background-color: $doctor;
+    background-color: white;
 
     > .row {
       &-1 {
@@ -224,7 +225,7 @@
           grid-area: 1/1;
           max-width: 800px;
           margin: 0px auto;
-          box-shadow: 3px 3px $atlantis;
+          box-shadow: 3px 3px 3px $off-black;
           align-self: start;
         }
 
