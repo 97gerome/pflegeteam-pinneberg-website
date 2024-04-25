@@ -130,7 +130,7 @@
 
   #aufgaben,
   #anforderungen {
-    background-color: $doctor;
+    background-color: white;
 
     > .row {
       @include max-width;
@@ -199,7 +199,7 @@
   }
 
   #lebensfreude {
-    background-color: $doctor;
+    background-color: white;
 
     > .row {
       &-1 {
