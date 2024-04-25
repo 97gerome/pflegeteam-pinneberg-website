@@ -550,9 +550,7 @@ const Leistungen = () => {
     <Layout>
       <main id="leistungen">
         <Hero
-          image={
-            <StaticImage src="../images/unsere-leistungen-kreis-pinneberg.png" />
-          }
+          image={<StaticImage src="../images/leistungen-hero-image.png" />}
           content={
             <h1>
               Unsere Leistungen
