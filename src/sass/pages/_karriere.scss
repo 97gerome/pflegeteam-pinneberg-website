@@ -17,7 +17,6 @@
   }
 
   #als_arbeitgeber {
-    height: 500px;
     color: $atlantis;
     background-color: white;
     overflow: hidden;
@@ -25,10 +24,10 @@
     > .row {
       @include max-width;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      height: 100%;
-      padding: 20px;
-      isolation: isolate;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 20px;
+      min-height: 500px;
+      padding: 50px 20px;
 
       > .col {
         position: relative;
@@ -39,10 +38,7 @@
 
         > svg {
           position: absolute;
-          top: 0px;
-          left: 0px;
-          height: 110%;
-          z-index: -1;
+          width: 100%;
         }
       }
     }
