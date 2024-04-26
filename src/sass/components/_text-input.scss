@@ -1,0 +1,23 @@
+.text-input {
+  > label {
+    font-weight: bold;
+
+    > input {
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+      padding-bottom: 3px;
+      border: none;
+      border-bottom: 1px solid transparentize($atlantis, 0.4);
+      outline: none;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 300;
+      color: $off-black;
+
+      &:focus-visible {
+        border-bottom: 1px solid $atlantis;
+      }
+    }
+  }
+}

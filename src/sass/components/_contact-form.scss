@@ -1,0 +1,36 @@
+#contact_form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+
+  > * {
+    grid-column: 1 / span 2;
+  }
+
+  > h5 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: $fresh-salmon;
+  }
+
+  > .text-input {
+    margin-bottom: 20px;
+  }
+
+  > #telefon_input {
+    grid-column: 1 / 1;
+  }
+
+  > #email_input {
+    grid-column: 2 / 2;
+  }
+
+  > .text-area {
+    margin-bottom: 20px;
+  }
+
+  > .buttons-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,10 +1,25 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
-    title: `pflegeteam-pinneberg-website`,
+    title: `Pflegeteam-Pinneberg GmbH`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-svg`],
-}
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-svg`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/favicon.png',
+      },
+    },
+  ],
+};

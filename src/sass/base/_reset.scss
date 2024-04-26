@@ -1,20 +1,42 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, 
 body {
-    height: 100%;
-    width: 100%;
-    min-width: 1440px;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
-    background-color: $atlantis;
-    font-family: 'Open Sans';
+  height: 100%;
+  width: 100%;
+  min-width: 1024px;
+  overflow-x: hidden;
+  overflow-y: initial;
+  font-family: 'Open Sans';
+  color: $off-black;
+  background-color: $nightshade;
+
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+    }
+  }
 }
 
-a {
-    text-decoration: none;
-    color: $off-black;
+dialog {
+  margin: auto;
+  border: none;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style-position: inside;
 }

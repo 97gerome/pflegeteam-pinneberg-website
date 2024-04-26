@@ -1,10 +1,59 @@
 .button {
-  height: 70px;
-  border-radius: 35px;
-  border: none;
+  @include transition($duration: 0.2s);
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid transparent;
   background-color: $fresh-salmon;
-  font-size: 20px;
+  font-family: inherit;
+  font-size: 1rem;
   padding: 0px 35px;
   color: white;
+  outline: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    border: 1px solid $fresh-salmon;
+    color: $fresh-salmon;
+  }
+
+  &.bordered {
+    border: 1px solid white;
+  }
+
+  &.transparent-button {
+    background-color: transparent;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $off-black;
+    }
+  }
+
+  &.white-button {
+    background-color: white;
+    color: $off-black;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white !important;
+    }
+
+    &.bordered {
+      border: 1px solid $off-black;
+
+      &:hover {
+        border: 1px solid $fresh-salmon;
+        color: $fresh-salmon !important;
+      }
+    }
+  }
+
+  &.small-button {
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+  }
 }

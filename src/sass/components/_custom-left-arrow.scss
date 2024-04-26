@@ -1,0 +1,23 @@
+.custom-left-arrow {
+  position: absolute;
+  height: 80px;
+  width: 85px;
+  padding: 15px;
+  background-color: $fresh-salmon;
+  border-radius: 0px 40px 40px 0px;
+  outline: none;
+  border: none;
+  left: 0;
+  cursor: pointer;
+  text-align: right;
+  @include transition(transform, 0.4s, ease-in-out);
+
+  > svg {
+    height: 50px;
+    width: 50px;
+  }
+
+  &:hover {
+    transform: translateX(-10px);
+  }
+}

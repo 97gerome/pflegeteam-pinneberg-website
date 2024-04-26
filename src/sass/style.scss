@@ -1,13 +1,35 @@
 //Utils
-@import "utils/mixins";
-@import "utils/variables";
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'utils/animations';
 
 //Base
-@import "base/reset";
-@import "base/general";
-@import "base/typography";
-
+@import 'base/reset';
+@import 'base/general';
+@import 'base/typography';
 
 //Components
-@import "components/header";
-@import "components/button";
+@import 'components/layout';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/button';
+@import 'components/services-card';
+@import 'components/modal';
+@import 'components/form';
+@import 'components/text-input';
+@import 'components/text-area';
+@import 'components/contact-form';
+@import 'components/service-modal';
+@import 'components/expressbewerbung-form';
+@import 'components/file-input';
+@import 'components/checkbox';
+@import 'components/custom-left-arrow';
+@import 'components/custom-right-arrow';
+
+//Pages
+@import 'pages/home';
+@import 'pages/leistungen';
+@import 'pages/kontakt';
+@import 'pages/karriere';
+@import 'pages/404';

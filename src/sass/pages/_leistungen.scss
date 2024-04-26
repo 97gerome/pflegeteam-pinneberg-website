@@ -1,0 +1,249 @@
+#leistungen {
+  > #leistungen_beschreibung {
+    background-color: white;
+
+    > .row {
+      @include max-width;
+      display: flex;
+      gap: 50px;
+      height: 100%;
+
+      > .col {
+        text-align: center;
+        padding: 80px 20px 50px 20px;
+
+        > svg {
+          height: 100px;
+          width: 100px;
+          margin-bottom: 20px;
+
+          #group_1 {
+            fill: $fresh-salmon;
+          }
+
+          #group_2 {
+            fill: $atlantis;
+          }
+        }
+
+        > h5 {
+          color: $atlantis;
+          margin-bottom: 40px;
+        }
+
+        > p {
+          margin-bottom: 40px;
+        }
+
+        > .buttons-wrapper {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  > #haeusliche_pflege,
+  > #betreuungleistungen {
+    scroll-margin-top: 141px;
+    color: white;
+
+    > .row {
+      &-1 {
+        @include max-width;
+        display: flex;
+
+        > .col {
+          flex: 1;
+          padding: 50px 20px;
+
+          &-2 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            > svg {
+              height: 80px;
+              width: 80px;
+              flex-shrink: 0;
+            }
+          }
+        }
+      }
+
+      &-2 {
+        > .carousel-container {
+          cursor: grab;
+
+          &:active {
+            cursor: grabbing;
+          }
+
+          > ul {
+            > .carousel-item {
+              height: 550px;
+              padding: 0px 10px;
+            }
+          }
+        }
+      }
+
+      &-3 {
+        > .buttons-wrapper {
+          @include max-width;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+          padding: 50px 20px;
+        }
+      }
+    }
+  }
+
+  > #haeusliche_pflege {
+    background-color: $fresh-salmon;
+
+    .custom-left-arrow,
+    .custom-right-arrow {
+      background-color: $fresh-salmon;
+    }
+
+    > .row {
+      &-1 {
+        > .col {
+          &-2 {
+            > svg {
+              path {
+                fill: $atlantis;
+              }
+            }
+          }
+        }
+      }
+
+      &-3 {
+        > .buttons-wrapper {
+          > .button:hover {
+            color: $fresh-salmon;
+          }
+        }
+      }
+    }
+  }
+
+  > #betreuungleistungen {
+    background-color: $atlantis;
+
+    .custom-left-arrow,
+    .custom-right-arrow {
+      background-color: $atlantis;
+    }
+
+    > .row {
+      &-1 {
+        > .col {
+          &-2 {
+            > svg {
+              path {
+                fill: $fresh-salmon;
+              }
+            }
+          }
+        }
+      }
+
+      &-3 {
+        > .buttons-wrapper {
+          > .button:hover {
+            color: $atlantis;
+          }
+        }
+      }
+    }
+  }
+
+  > #weiter_mit_pflegeteam_pinneberg {
+    background-color: $doctor;
+
+    > .row {
+      > .col {
+        @include max-width;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 20px;
+        text-align: center;
+
+        > h3 {
+          font-weight: 800;
+        }
+
+        > .buttons-wrapper {
+          display: flex;
+          justify-content: center;
+          gap: 100px;
+        }
+      }
+    }
+  }
+
+  > #vermittlung_von {
+    background-color: white;
+
+    > .row {
+      display: flex;
+      gap: 20px;
+
+      > .col {
+        flex: 1;
+
+        > .content {
+          max-width: calc($max-width / 2);
+          padding: 50px 20px;
+        }
+
+        &-1 {
+          background-color: $nightshade;
+          border-radius: 0px 50px 0px 0px;
+
+          > .content {
+            margin-left: auto;
+            padding-right: 100px;
+            color: white;
+
+            > h4 {
+              color: $beru;
+              margin-bottom: 20px;
+            }
+
+            > ul {
+              font-weight: 600;
+              margin-bottom: 30px;
+            }
+          }
+        }
+
+        &-2 {
+          > .content {
+            margin-right: auto;
+
+            > h4 {
+              color: $atlantis;
+              margin-bottom: 50px;
+            }
+
+            > .partners-wrapper {
+              display: flex;
+              justify-content: center;
+              gap: 50px;
+
+              > .gatsby-image-wrapper {
+                height: 70px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

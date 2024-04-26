@@ -1,0 +1,229 @@
+#home {
+  > #pflegeteam_pinneberg {
+    background-color: white;
+    padding: 50px 20px;
+
+    > .row {
+      @include max-width;
+
+      &-1 {
+        text-align: center;
+        margin-bottom: 70px;
+
+        > h4 {
+          color: $fresh-salmon;
+        }
+      }
+
+      &-2 {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+
+        > .col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+    }
+  }
+
+  > #sorgenfreies_leben {
+    height: 550px;
+    display: grid;
+
+    > .gatsby-image-wrapper {
+      @include background-overlay(transparentize($atlantis, 0.5));
+      grid-area: 1/1;
+      height: 100%;
+      width: 100%;
+    }
+
+    > .row {
+      @include max-width;
+      position: relative;
+      color: white;
+      grid-area: 1/1;
+      padding: 20px;
+
+      > .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2,
+        p {
+          text-shadow: 0px 2px 2px $off-black;
+        }
+
+        svg {
+          filter: drop-shadow(0px 2px 2px $off-black);
+        }
+
+        > h2 {
+          color: $fresh-salmon;
+        }
+
+        > p {
+          margin-bottom: 100px;
+        }
+
+        > .items-wrapper {
+          display: flex;
+          gap: 100px;
+
+          > .item {
+            display: flex;
+            gap: 20px;
+            max-width: 220px;
+
+            > svg {
+              flex-shrink: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > #unsere_leistungen {
+    > .row {
+      > .col {
+        @include max-width;
+      }
+
+      &-1 {
+        background-color: $atlantis;
+
+        > .col {
+          padding: 30px 20px;
+
+          > h4 {
+            color: white;
+
+            > span {
+              color: $beru;
+            }
+          }
+        }
+      }
+
+      &-2 {
+        background-color: $beru;
+
+        > .col {
+          padding: 50px 20px;
+
+          > .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+
+            > .leistung {
+              display: grid;
+              height: 550px;
+              overflow: hidden;
+
+              > .gatsby-image-wrapper {
+                @include transition(transform);
+                @include background-overlay(transparentize($off-black, 0.6));
+                grid-area: 1/1;
+              }
+
+              > .content {
+                position: relative;
+                grid-area: 1/1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 30px 80px;
+                color: white;
+                text-align: center;
+
+                > svg {
+                  height: 120px;
+                  width: 120px;
+                  margin-bottom: 30px;
+                }
+
+                > h5 {
+                  margin-bottom: 10px;
+                }
+
+                > p {
+                  margin-bottom: 40px;
+                }
+              }
+
+              &:nth-child(1) {
+                border-radius: 300px 50px 50px 50px;
+              }
+
+              &:nth-child(2) {
+                border-radius: 50px 300px 50px 50px;
+              }
+
+              &:hover {
+                > .gatsby-image-wrapper {
+                  @include scale;
+                }
+
+                > .content {
+                  > svg {
+                    animation: bounce 1s ease;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > #mit_pflegeteam_pinneberg {
+    background-color: white;
+
+    > .row {
+      > .col {
+        @include max-width;
+        padding: 80px 20px;
+        text-align: center;
+
+        > h5 {
+          color: $fresh-salmon;
+          margin-bottom: 50px;
+        }
+
+        > h2 {
+          margin-bottom: 20px;
+        }
+
+        > div {
+          display: flex;
+          justify-content: center;
+        }
+
+        > .items-wrapper {
+          gap: 50px;
+          margin: 10px 0px 50px 0px;
+
+          > .item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+
+        > .buttons-wrapper {
+          align-items: center;
+          gap: 50px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+#hero {
+  height: 600px;
+  display: grid;
+  background-color: white;
+
+  > .gatsby-image-wrapper {
+    @include background-overlay(
+      linear-gradient(to right, transparentize($off-black, 0.6), transparent)
+    );
+    grid-area: 1/1;
+    height: 100%;
+    width: 100%;
+    animation: fade-in 0.5s ease-in;
+  }
+
+  > .row {
+    @include max-width;
+    position: relative;
+    grid-area: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+
+    > .content {
+      max-width: 50%;
+      padding: 50px 20px;
+
+      > h1 {
+        margin-bottom: 20px;
+
+        > span {
+          color: $beru;
+        }
+      }
+
+      > p {
+        margin-bottom: 40px;
+      }
+
+      .buttons-wrapper {
+        > a {
+          margin: 0px 30px;
+        }
+      }
+    }
+  }
+}
