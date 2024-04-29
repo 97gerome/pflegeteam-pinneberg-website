@@ -18,8 +18,29 @@
       color: $off-black;
       resize: none;
 
+      &[disabled] {
+        background-color: transparentize($atlantis, 0.95);
+        opacity: 0.6;
+      }
+
       &:focus-visible {
         border: 1px solid $atlantis;
+      }
+    }
+  }
+
+  > .error-text {
+    min-height: 16.5px;
+    margin-top: 2px;
+    color: $error-red;
+  }
+
+  &.error {
+    > label {
+      color: $error-red;
+
+      > textarea {
+        border: 1px solid transparentize($error-red, 0.4);
       }
     }
   }

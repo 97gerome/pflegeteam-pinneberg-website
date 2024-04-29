@@ -15,8 +15,29 @@
       font-weight: 300;
       color: $off-black;
 
+      &[disabled] {
+        background-color: transparent;
+        opacity: 0.6;
+      }
+
       &:focus-visible {
         border-bottom: 1px solid $atlantis;
+      }
+    }
+  }
+
+  > .error-text {
+    min-height: 16.5px;
+    margin-top: 2px;
+    color: $error-red;
+  }
+
+  &.error {
+    > label {
+      color: $error-red;
+
+      > input {
+        border-bottom: 1px solid transparentize($error-red, 0.4);
       }
     }
   }
