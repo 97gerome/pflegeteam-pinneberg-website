@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Layout from '../components/layout/layout';
 import Hero from '../components/hero';
 import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../components/button';
@@ -547,7 +546,7 @@ const Leistungen = () => {
   };
 
   return (
-    <Layout>
+    <>
       <main id="leistungen">
         <Hero
           image={<StaticImage src="../images/leistungen-hero-image.png" />}
@@ -775,7 +774,7 @@ const Leistungen = () => {
         heading={modalData.heading}
         content={modalData.content}
       />
-    </Layout>
+    </>
   );
 };
 
