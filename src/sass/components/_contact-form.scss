@@ -31,6 +31,10 @@
 
   > .buttons-wrapper {
     width: 100%;
-    text-align: center;
+
+    > .button {
+      margin: auto;
+      min-width: 130px;
+    }
   }
 }

@@ -2,7 +2,7 @@
   > label {
     font-weight: bold;
 
-    .input-wrapper {
+    > .input-wrapper {
       margin-top: 5px;
 
       > svg {
@@ -24,6 +24,37 @@
 
       > input {
         display: none;
+      }
+
+      &.disabled {
+        > p {
+          cursor: default;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  > .error-text {
+    margin-left: 25px;
+    min-height: 16.5px;
+    color: $error-red;
+  }
+
+  &.error {
+    > label {
+      color: $error-red;
+
+      > .input-wrapper {
+        > svg {
+          > path {
+            fill: $error-red;
+          }
+        }
+
+        > input {
+          border-bottom: 1px solid transparentize($error-red, 0.4);
+        }
       }
     }
   }
