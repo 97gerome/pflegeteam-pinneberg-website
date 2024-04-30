@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <main id="home">
       <Hero
-        image={<StaticImage src="../images/home-hero-image.png" />}
+        image={<StaticImage src="../images/home-hero-image.png" alt="" />}
         content={
           <>
             <h1>
@@ -117,7 +117,7 @@ const Home = () => {
           <div className="col">
             <div className="row">
               <div className="leistung">
-                <StaticImage src="../images/haeusliche-pflege.png" />
+                <StaticImage src="../images/haeusliche-pflege.png" alt="" />
                 <div className="content">
                   <HaeuslichePflegeIcon />
                   <h5>Häusliche Pflege</h5>
@@ -131,7 +131,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="leistung">
-                <StaticImage src="../images/betreuung.png" />
+                <StaticImage src="../images/betreuung.png" alt="" />
                 <div className="content">
                   <BetreuungIcon />
                   <h5>Betreuung</h5>

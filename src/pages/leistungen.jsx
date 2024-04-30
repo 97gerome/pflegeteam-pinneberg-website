@@ -38,7 +38,7 @@ const responsive = {
 
 const haeuslichePflegeList = [
   {
-    image: <StaticImage src="../images/einkaufdienst-fahrten.png" />,
+    image: <StaticImage src="../images/einkaufdienst-fahrten.png" alt="" />,
     heading: (
       <>
         Einkaufsdienst/-
@@ -88,7 +88,7 @@ const haeuslichePflegeList = [
     ),
   },
   {
-    image: <StaticImage src="../images/reinigung-der-wohnung.png" />,
+    image: <StaticImage src="../images/reinigung-der-wohnung.png" alt="" />,
     heading: (
       <>
         Reinigung&nbsp;
@@ -139,7 +139,7 @@ const haeuslichePflegeList = [
     ),
   },
   {
-    image: <StaticImage src="../images/hausmeisterservice.png" />,
+    image: <StaticImage src="../images/hausmeisterservice.png" alt="" />,
     heading: (
       <>
         Hausmeisterservice&nbsp;
@@ -182,7 +182,7 @@ const haeuslichePflegeList = [
     ),
   },
   {
-    image: <StaticImage src="../images/gassiservice.png" />,
+    image: <StaticImage src="../images/gassiservice.png" alt="" />,
     heading: <>Gassiservice</>,
     summary:
       'Sie schaffen es nicht Ihren geliebten Vierbeiner auszuführen; dies übernehmen wir gerne! Wir helfen das Wohlbefinden und die Gesundheit des Hundes zu erhalten und gleichzeitig den Besitzern/Besitzerinnen eine Entlastung zu bieten.',
@@ -225,7 +225,7 @@ const haeuslichePflegeList = [
     ),
   },
   {
-    image: <StaticImage src="../images/arzt-behoerdenfahrten.png" />,
+    image: <StaticImage src="../images/arzt-behoerdenfahrten.png" alt="" />,
     heading: (
       <>
         Arzt-/
@@ -271,7 +271,7 @@ const haeuslichePflegeList = [
 
 const betreuungleistungenList = [
   {
-    image: <StaticImage src="../images/familienbetreuung.png" />,
+    image: <StaticImage src="../images/familienbetreuung.png" alt="" />,
     heading: (
       <>
         Familien-
@@ -314,7 +314,7 @@ const betreuungleistungenList = [
     ),
   },
   {
-    image: <StaticImage src="../images/kinderbetreuung.png" />,
+    image: <StaticImage src="../images/kinderbetreuung.png" alt="" />,
     heading: (
       <>
         Kinder-
@@ -367,7 +367,7 @@ const betreuungleistungenList = [
     ),
   },
   {
-    image: <StaticImage src="../images/muttervertretung.png" />,
+    image: <StaticImage src="../images/muttervertretung.png" alt="" />,
     heading: <>Muttervertretung</>,
     summary:
       'Wir übernehmen die Aufgaben von Ihnen als Mutter oder als Elternteil, sollten Sie zeitweise verhindert sein.',
@@ -414,7 +414,7 @@ const betreuungleistungenList = [
     ),
   },
   {
-    image: <StaticImage src="../images/schulbegleitung.png" />,
+    image: <StaticImage src="../images/schulbegleitung.png" alt="" />,
     heading: <>Schulbegleitung</>,
     summary:
       'Unsere Schulbegleitung ist darauf ausgerichtet, Schülern und Schülerinnen mit unterschiedlichen Bedürfnissen die bestmögliche Unterstützung zu bieten, damit sie erfolgreich am schulischen Leben teilnehmen können.',
@@ -465,7 +465,7 @@ const betreuungleistungenList = [
     ),
   },
   {
-    image: <StaticImage src="../images/verhindungspflege.png" />,
+    image: <StaticImage src="../images/verhindungspflege.png" alt="" />,
     heading: (
       <>
         Verhinderungs-
@@ -549,7 +549,9 @@ const Leistungen = () => {
     <>
       <main id="leistungen">
         <Hero
-          image={<StaticImage src="../images/leistungen-hero-image.png" />}
+          image={
+            <StaticImage src="../images/leistungen-hero-image.png" alt="" />
+          }
           content={
             <h1>
               Unsere Leistungen
