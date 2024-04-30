@@ -8,6 +8,7 @@ import * as yup from 'yup';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { generateUnitTag } from '../utils/wordpress';
+import { Bars } from 'react-loader-spinner';
 import { phoneRegExp } from '../utils/reg-exp';
 
 const initialValues = {
@@ -111,7 +112,7 @@ const ContactForm = () => {
             <Button
               label={
                 isSubmitting ? (
-                  <ThreeDots color="white" height="40px" width="40px" />
+                  <Bars color="white" width={28} height={28} />
                 ) : (
                   'Senden'
                 )
