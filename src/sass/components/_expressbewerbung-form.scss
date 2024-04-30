@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: $atlantis;
-  gap: 20px;
+  gap: 8px;
 
   > * {
     grid-column: 1 / span 2;
@@ -42,7 +42,11 @@
   }
 
   > .buttons-wrapper {
-    text-align: center;
     margin-bottom: 20px;
+
+    > .button {
+      min-width: 185px;
+      margin: auto;
+    }
   }
 }

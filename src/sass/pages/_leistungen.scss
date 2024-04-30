@@ -36,7 +36,9 @@
         }
 
         > .buttons-wrapper {
-          text-align: center;
+          > .button {
+            margin: auto;
+          }
         }
       }
     }

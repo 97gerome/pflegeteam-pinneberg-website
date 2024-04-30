@@ -35,9 +35,11 @@
               gap: 10px;
               margin: 20px 0px;
 
-              > svg {
-                height: 40px;
-                width: 40px;
+              > a {
+                > svg {
+                  height: 40px;
+                  width: 40px;
+                }
               }
             }
 

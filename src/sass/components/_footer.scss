@@ -88,14 +88,15 @@
           }
         }
 
-        .social-media-wrapper {
+        .socials-wrapper {
           display: flex;
           gap: 10px;
 
-          > svg {
-            height: 50px;
-            width: 50px;
-            cursor: pointer;
+          > a {
+            > svg {
+              height: 50px;
+              width: 50px;
+            }
           }
         }
       }

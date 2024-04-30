@@ -15,7 +15,9 @@ const Karriere = () => {
   return (
     <main id="karriere">
       <Hero
-        image={<StaticImage src="../images/deine-karriere-mit-uns.png" />}
+        image={
+          <StaticImage src="../images/deine-karriere-mit-uns.png" alt="" />
+        }
         content={
           <h1>
             Deine <br /> Karriere <br /> <span>mit uns</span>{' '}
@@ -148,14 +150,14 @@ const Karriere = () => {
             </ol>
           </div>
           <div className="col col-2">
-            <StaticImage src="../images/aufgaben-image.png" />
+            <StaticImage src="../images/aufgaben-image.png" alt="" />
           </div>
         </div>
       </section>
       <section id="anforderungen">
         <div className="row">
           <div className="col col-1">
-            <StaticImage src="../images/anforderungen-image.png" />
+            <StaticImage src="../images/anforderungen-image.png" alt="" />
           </div>
           <div className="col col-2">
             <h4>Anforderungen</h4>

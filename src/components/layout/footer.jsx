@@ -50,9 +50,21 @@ const Footer = () => {
             <br />
             Deutschland
           </p>
-          <div className="social-media-wrapper">
-            <FacebookLogo />
-            <InstagramLogo />
+          <div className="socials-wrapper">
+            <a
+              href="https://www.facebook.com/pflegeteampi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FacebookLogo />
+            </a>
+            <a
+              href="https://www.instagram.com/pflegeteam_pinneberg?igsh=enJkcXNidWZsbzAx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramLogo />
+            </a>
           </div>
         </div>
         <div className="col col-4">
