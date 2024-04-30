@@ -24,8 +24,20 @@ const Kontakt = () => {
               telefonisch erreichen!
             </p>
             <div className="socials-wrapper">
-              <FacebookLogo />
-              <InstagramLogo />
+              <a
+                href="https://www.facebook.com/pflegeteampi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FacebookLogo />
+              </a>
+              <a
+                href="https://www.instagram.com/pflegeteam_pinneberg?igsh=enJkcXNidWZsbzAx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramLogo />
+              </a>
             </div>
             <h5>Kontakt Informationen</h5>
             <div className="contact-info-wrapper">
