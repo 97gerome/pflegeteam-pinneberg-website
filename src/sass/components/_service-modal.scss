@@ -79,9 +79,8 @@
         }
 
         > .buttons-wrapper {
-          text-align: center;
-
           > .button {
+            margin: auto;
             border: 1px solid $atlantis;
             color: $off-black;
             font-weight: 700;
