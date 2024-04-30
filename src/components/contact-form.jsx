@@ -8,7 +8,7 @@ import * as yup from 'yup';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { generateUnitTag } from '../utils/wordpress';
-import { ThreeDots } from 'react-loader-spinner';
+import { phoneRegExp } from '../utils/reg-exp';
 
 const initialValues = {
   vollstaendiger_name: '',
@@ -17,9 +17,6 @@ const initialValues = {
   betreff: '',
   nachricht: '',
 };
-
-const phoneRegExp =
-  /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/;
 
 const validationSchema = yup.object({
   vollstaendiger_name: yup.string().required('Dies ist ein Pflichtfeld.'),
