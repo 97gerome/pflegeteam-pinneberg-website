@@ -67,7 +67,7 @@ const Home = () => {
             <p className="italic center">
               Hochmotivierte
               <br />
-              Mitarbeite
+              Mitarbeiter
             </p>
           </div>
         </div>
