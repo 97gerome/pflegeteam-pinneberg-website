@@ -3,7 +3,6 @@ import Form from './form';
 import TextInput from './text-input';
 import TextArea from './text-area';
 import Button from './button';
-import FileInput from './file-input';
 import Checkbox from './checkbox';
 import { Formik } from 'formik';
 import * as yup from 'yup';
@@ -41,22 +40,6 @@ const validationSchema = yup.object({
     .email('Bitte geben Sie eine gültige Email ein.')
     .required('Dies ist ein Pflichtfeld.'),
   nachricht: yup.string(),
-  lebenslauf: yup
-    .mixed()
-    .test('fileSize', 'Die Datei muss weniger als 5MB groß sein.', (value) => {
-      if (value) {
-        return value.size <= 5242880;
-      }
-      return true;
-    }),
-  anschreiben: yup
-    .mixed()
-    .test('fileSize', 'Die Datei muss weniger als 5MB groß sein.', (value) => {
-      if (value) {
-        return value.size <= 5242880;
-      }
-      return true;
-    }),
 });
 
 const ExpressbewerbungForm = () => {
@@ -94,18 +77,7 @@ const ExpressbewerbungForm = () => {
       onSubmit={handleSubmit}
       validationSchema={validationSchema}
     >
-      {({
-        values,
-        errors,
-        handleChange,
-        setFieldValue,
-        submitForm,
-        isSubmitting,
-      }) => {
-        const handleFileSelect = (e, field) => {
-          setFieldValue(field, e.currentTarget.files[0]);
-        };
-
+      {({ values, errors, handleChange, submitForm, isSubmitting }) => {
         return (
           <Form id="expressbewerbung_form">
             <h5>Expressbewerbung</h5>
@@ -185,22 +157,6 @@ const ExpressbewerbungForm = () => {
               value={values.nachricht}
               onChange={handleChange('nachricht')}
               error={errors.nachricht}
-              disabled={isSubmitting}
-            />
-            <FileInput
-              id="lebenslauf_input"
-              label="Lebenslauf (optional)"
-              accept="application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/pdf"
-              onChange={(e) => handleFileSelect(e, 'lebenslauf')}
-              error={errors.lebenslauf}
-              disabled={isSubmitting}
-            />
-            <FileInput
-              id="anschreiben_input"
-              label="Anschreiben (optional)"
-              accept="application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/pdf"
-              onChange={(e) => handleFileSelect(e, 'anschreiben')}
-              error={errors.anschreiben}
               disabled={isSubmitting}
             />
             <Checkbox
