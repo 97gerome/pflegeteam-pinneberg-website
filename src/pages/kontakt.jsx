@@ -44,7 +44,7 @@ const Kontakt = () => {
               <p className="extra-large bold label">Rufen Sie uns an</p>
               <div className="contact-numbers-wrapper">
                 <p>04101 &ndash; 604 60 91</p>
-                <p>04101 &ndash; 604 60 91 (Fax)</p>
+                <p>04101 &ndash; 604 76 95 (Fax)</p>
               </div>
               <p className="extra-large bold label">Email</p>
               <div className="email-wrapper">
