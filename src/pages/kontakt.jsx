@@ -52,9 +52,7 @@ const Kontakt = () => {
               </div>
             </div>
           </div>
-          <div className="col col-2">
-            <ContactForm />
-          </div>
+          <div className="col col-2"></div>
         </div>
         <div className="row row-3">
           <div className="col col-1">

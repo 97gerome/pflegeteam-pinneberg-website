@@ -204,7 +204,6 @@ const Karriere = () => {
           <div id="map">
             <GoogleMaps coordinates={coordinates} />
           </div>
-          <ExpressbewerbungForm />
         </div>
       </section>
     </main>
