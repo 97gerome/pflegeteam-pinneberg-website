@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/hero';
 import { StaticImage } from 'gatsby-plugin-image';
-import ExpressbewerbungForm from '../components/expressbewerbung-form';
 import { coordinates } from '../utils/map';
 import GoogleMaps from '../components/google-maps';
 import Watermark from '../images/watermark.svg';

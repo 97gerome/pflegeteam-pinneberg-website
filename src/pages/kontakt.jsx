@@ -1,7 +1,6 @@
 import React from 'react';
 import FacebookLogo from '../images/facebook-logo-atlantis.svg';
 import InstagramLogo from '../images/instagram-logo-atlantis.svg';
-import ContactForm from '../components/contact-form';
 import GoogleMaps from '../components/google-maps';
 import { coordinates } from '../utils/map';
 
